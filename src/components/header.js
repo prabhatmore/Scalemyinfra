@@ -7,9 +7,18 @@ function Header({ onQuoteClick }) {
       <div className="nav-container">
 
         {/* LOGO + MICROSOFT PARTNER */}
-<Link to="/" className="logo-wrapper">
-  CloudAxis
-</Link>
+<a
+  href="/"
+  className="text-logo"
+  title="We Build. You Scale."
+>
+  <span className="logo-scale">SCALE</span>
+  <span className="logo-my">My</span>
+  <span className="logo-infra">Infra</span>
+</a>
+
+
+
 
         <nav className="nav-links">
           <Link to="/services">Services</Link>

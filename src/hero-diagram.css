@@ -87,6 +87,7 @@ SHIFT SERVICES SECTION DOWN
   font-size: 48px;
   line-height: 1.15;
   font-weight: 700;
+   white-space: nowrap; 
 }
 
 .hero-left h1 span {
@@ -296,4 +297,102 @@ AZURE HERO VISUAL (STATIC)
   .azure-icon span {
     font-size: 11px;
   }
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.site-logo {
+  height: auto;
+  max-height: 56px;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+}
+.navbar {
+  height: 80px;
+}
+
+.text-logo {
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.logo-scale {
+  color: #4aa3c7;
+}
+
+.logo-my {
+  color: #e5533d;
+  margin: 0 2px;
+}
+
+.logo-infra {
+  color: #1f2933;
+}
+
+.text-logo:hover {
+  opacity: 0.9;
+}
+
+
+.text-logo:hover .logo-scale {
+  color: #3b8aa0;
+}
+
+.text-logo:hover .logo-my {
+  color: #d94a24;
+}
+
+@media (max-width: 768px) {
+  .text-logo {
+    font-size: 20px;
+  }
+}
+
+.text-logo {
+  transition: transform 0.2s ease;
+}
+
+.text-logo:hover {
+  transform: translateY(-1px);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.text-logo {
+  position: relative;
+}
+
+.text-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4aa3c7;
+  transition: width 0.25s ease;
+}
+
+.text-logo:hover::after {
+  width: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }

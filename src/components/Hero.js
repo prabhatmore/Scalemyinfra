@@ -4,12 +4,14 @@ function Hero({ openQuoteModal }) {
       <div className="hero-container">
         {/* LEFT */}
         <div className="hero-left">
-          <h1>
-            Build. Migrate. Secure. Scale.
-          </h1>
+         <h1 className="fade-up">
+  Build. <span className="highlight">Migrate.</span> Secure. Scale.
+</h1>
 
-          <p className="hero-subtitle">
-            Cloud & infrastructure Services That Just Work. 
+<p className="hero-subtitle fade-up fade-delay-1">
+  Cloud & infrastructure services that just work.
+</p>
+          <p className="hero-subtitle"> 
             <div></div>
             We help businesses design, migrate, and manage secure Azure cloud - with zero and
             Confusion and real result.
@@ -18,17 +20,10 @@ function Hero({ openQuoteModal }) {
           <li>Secure infrastructure Build</li>
           <li>Cloud Operations & Support</li>
 
-          <div className="hero-actions">
-        
-            <button className="btn-primary" onClick={openQuoteModal}>
-              Talk to a Cloud Expert
-            </button>
-          
-            <span className="hero-secondary">
-              <div>
-              </div>
-            </span>
-          </div>
+         <div className="hero-cta fade-up fade-delay-2">
+  <button className="btn-primary">Talk to a Cloud Expert</button>
+  <span className="hero-secondary">Free architecture discussion</span>
+</div>
 
           <div className="hero-trust">
             <span>Microsoft Azure Focused</span>
