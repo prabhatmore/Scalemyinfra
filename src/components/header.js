@@ -8,13 +8,12 @@ function Header({ onQuoteClick }) {
 
         {/* LOGO + MICROSOFT PARTNER */}
 <a
-  href="/"
+href="/"
   className="text-logo"
   title="We Build. You Scale."
 >
-  <span className="logo-scale">SCALE</span>
-  <span className="logo-my">My</span>
-  <span className="logo-infra">Infra</span>
+  <span className="logo-scale">Infra</span>
+  <span className="logo-my">bryte</span>
 </a>
 
 

@@ -30,7 +30,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2025 CloudAxis Consulting. All rights reserved.
+        © 2026 infrabryte Consulting. All rights reserved.
       </div>
     </footer>
   );

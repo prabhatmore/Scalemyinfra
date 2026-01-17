@@ -62,12 +62,7 @@ const servicesData = {
       slug: "cloud-cost-optimization",
       icon: <FaMoneyBillWave />,
     },
-    {
-      title: "Azure Health & Performance Optimization ",
-      desc: "We make your Azure run faster and more stable without increasing cost.",
-      slug: "Azure-Health-Performance-Optimization",
-      icon: <FaProjectDiagram />,
-    },
+
     {
       title: "Cloud Security Posture Improvement ",
       desc: "Track score improvements monthly.",

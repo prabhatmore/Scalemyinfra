@@ -22,7 +22,6 @@ function Hero({ openQuoteModal }) {
 
          <div className="hero-cta fade-up fade-delay-2">
   <button className="btn-primary">Talk to a Cloud Expert</button>
-  <span className="hero-secondary">Free architecture discussion</span>
 </div>
 
           <div className="hero-trust">
@@ -32,14 +31,16 @@ function Hero({ openQuoteModal }) {
         </div>
 
         {/* RIGHT */}
-        <div className="hero-right">
+       
+ <div className="hero-right">
           <img
             src="/images/cloud_azure.gif"
             alt="Azure Cloud Engineering"
             className="hero-illustration"
           />
+           <div className="hero-image">
+    </div>
         </div>
-
       </div>
     </section>
   );

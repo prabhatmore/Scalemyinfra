@@ -4,7 +4,7 @@ function About() {
 
       {/* HERO */}
       <div className="about-hero">
-        <h1>About <span className="highlight">CloudAxis</span></h1>
+        <h1>About <span className="highlight">infrabryte</span></h1>
         <p className="about-intro">
           We are a cloud-first consulting and managed services company dedicated to helping businesses move, secure, and grow on Microsoft Azure with confidence.
 we specialize in simplifying complex IT challenges for SMBs and growing enterprises. From strategy to execution and ongoing support, we act as your trusted cloud partner—so you can focus on your business while we take care of the cloud.
@@ -26,9 +26,9 @@ we specialize in simplifying complex IT challenges for SMBs and growing enterpri
         </p>
       </div>
       <div className="about-section about-founder">
-  <h2>Who’s Behind CloudAxis</h2>
+  <h2>Who’s Behind infrabryte</h2>
   <p>
-    CloudAxis is led by a cloud engineer with hands-on experience in
+    infra bryte is led by a cloud engineer with hands-on experience in
     Microsoft Azure, Kubernetes (AKS), Terraform, DevOps automation,
     and cloud cost optimization.
   </p>
@@ -57,7 +57,7 @@ we specialize in simplifying complex IT challenges for SMBs and growing enterpri
         <ul className="about-list">
           <li>Architecture-first, not tool-first</li>
           <li>No sales pressure or forced upsells</li>
-          <li>Clear explanations — no buzzwords</li>
+          <li>Clear explanations, no buzzwords</li>
           <li>Direct access to senior cloud expertise</li>
           <li>Solutions designed for your scale and budget</li>
         </ul>

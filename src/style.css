@@ -353,15 +353,6 @@ background: #ffffff;
 box-sizing: border-box;
 }
 
-/* Dropdown arrow alignment */
-.hero-form select {
-appearance: none;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6 6 6-6'/%3E%3C/svg%3E");
-background-repeat: no-repeat;
-background-position: right 16px center;
-background-size: 14px;
-}
-
 /* =========================
 PILL CTA BUTTON (NEW)
 ========================= */
@@ -1934,3 +1925,13 @@ text-align: center;
   justify-content: space-between;
 }
 
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.container.narrow {
+  max-width: 800px;
+}

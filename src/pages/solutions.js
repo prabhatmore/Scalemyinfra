@@ -107,16 +107,7 @@ function Solutions() {
 </div>
 
 
-      {/* DELIVERY APPROACH */}
-      <div className="solutions-approach">
-        <h2>How We Deliver Solutions</h2>
-        <ul>
-          <li>Engineer-led consultation (no sales pitch)</li>
-          <li>Architecture-first approach</li>
-          <li>Production-ready designs</li>
-          <li>Clear documentation & handover</li>
-        </ul>
-      </div>
+  
 
       {/* CTA */}
       <div className="solutions-cta">
