@@ -98,17 +98,17 @@ HERO SECTION
 ========================= */
 
 .hero {
-  padding: 100px 270px 320px;
+  min-height: auto;
+  height: auto;
+  padding: 80px 0 40px; /* optional but recommended */
 }
-
 
 .hero-split {
-display: grid;
-grid-template-columns: 1.1fr 0.9fr;
-align-items: center;
-gap: 50px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: flex-start; /* ✅ FIX */
+  gap: 50px;
 }
-
 
 /* =========================
 HERO WITH FORM
@@ -235,6 +235,14 @@ color: white;
 margin-top: 80px;
 }
 
+.footer-brand {
+  font-size: 46px !important;   /* make it BIG */
+  font-weight: 600;     /* bold */
+  margin-bottom: 10px;
+  margin-top: 3px;
+  letter-spacing: 0.5px; /* optional, looks premium */
+}
+
 .footer-container {
 max-width: 1100px;
 margin: auto;
@@ -249,6 +257,35 @@ text-align: center;
 padding: 15px;
 background: #08162b;
 font-size: 14px;
+}
+.footer-contact p {
+  margin: 3px 0;
+  font-size: 16px;
+}
+/* Legal bar – WHITE background */
+.legal-footer {
+  background: #ffffff;        /* WHITE */
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 0;
+}
+
+.legal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;            /* SPACE BETWEEN CONTENT */
+  font-size: 14px;
+}
+
+.legal-container a,
+.legal-container span {
+  color: #111827;             /* DARK TEXT on white */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.legal-container a:hover {
+  text-decoration: underline;
 }
 
 /* =========================
@@ -595,6 +632,39 @@ line-height: 1.6;
 font-size: 26px;
 color: #0f62fe;
 }
+
+/*this is modal style for priavcy statement*/
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #ffffff;
+  max-width: 800px;
+  width: 90%;
+  padding: 32px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 /* =========================
 SERVICE CARD – AZURE STYLE
 ========================= */
@@ -1139,22 +1209,61 @@ color: #6b7280;
 max-width: 1100px;
 margin: auto;
 padding: 80px 20px;
+padding-top: 0;
 }
 
-.about-hero {
-text-align: center;
-margin-bottom: 60px;
+.about-hero-section {
+  background: #f8fafc;
+  padding: 30px 20px 80px; 
 }
 
-.about-intro {
-max-width: 720px;
-margin: 20px auto 0;
-font-size: 18px;
-color: #4b5563;
+.about-hero-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.about-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.about-hero-content p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 40px;
 }
 
 .about-section {
-margin-bottom: 50px;
+margin-bottom: 35px;
+
 }
 
 .about-list {
@@ -1173,8 +1282,18 @@ border-radius: 12px;
 }
 
 .about-cta {
-text-align: center;
-margin-top: 70px;
+  text-align: center;
+  padding: 32px 20px 40px; /* top | sides | bottom */
+}
+.cta-highlight {
+  max-width: 720px;        /* controls width */
+  margin: 16px auto 32px; /* centers horizontally */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #374151;
+  background: #f8fafc;    /* subtle highlight */
+  padding: 16px 24px;
+  border-radius: 10px;
 }
 .principles-grid {
 display: grid;

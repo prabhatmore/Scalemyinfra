@@ -23,11 +23,6 @@ function Hero({ openQuoteModal }) {
          <div className="hero-cta fade-up fade-delay-2">
   <button className="btn-primary">Talk to a Cloud Expert</button>
 </div>
-
-          <div className="hero-trust">
-            <span>Microsoft Azure Focused</span>
-            <span>AKS & Kubernetes Experts</span>
-          </div>
         </div>
 
         {/* RIGHT */}

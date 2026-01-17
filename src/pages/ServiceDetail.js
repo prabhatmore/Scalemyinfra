@@ -9,7 +9,7 @@ const serviceDetails = {
   "cloud-setup-basics": {
     title: "Cloud Setup & Basics",
     intro:
-      "Everything you need to get started with Microsoft Azure — securely and cost-effectively.",
+      "New to cloud? We help organizations understand what cloud is, how it works, and how to plan a smooth transition from on-premise infrastructure to the cloud.",
     about: `
 This service is designed for businesses taking their first step into the cloud.
 We set up your Azure environment with best practices from day one, ensuring

@@ -22,7 +22,7 @@ href="/"
         <nav className="nav-links">
           <Link to="/services">Services</Link>
           <Link to="/solutions">Solutions</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
 
           <button className="nav-cta" onClick={onQuoteClick}>
