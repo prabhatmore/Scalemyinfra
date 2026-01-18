@@ -7,14 +7,14 @@ function Header({ onQuoteClick }) {
       <div className="nav-container">
 
         {/* LOGO + MICROSOFT PARTNER */}
-<a
-href="/"
-  className="text-logo"
-  title="We Build. You Scale."
->
-  <span className="logo-scale">Infra</span>
-  <span className="logo-my">bryte</span>
-</a>
+        <a
+          href="/"
+          className="text-logo"
+          title="We Build. You Scale."
+        >
+          <span className="logo-scale">Infra</span>
+          <span className="logo-my">bryte</span>
+        </a>
 
 
 
@@ -23,11 +23,7 @@ href="/"
           <Link to="/services">Services</Link>
           <Link to="/solutions">Solutions</Link>
           <Link to="/about">About Us</Link>
-          <Link to="/contact">Contact</Link>
-
-          <button className="nav-cta" onClick={onQuoteClick}>
-            Talk to a Cloud Expert
-          </button>
+          <Link to="/contact">Contact Us</Link>
         </nav>
 
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaLinkedin, FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -30,10 +31,24 @@ function Footer() {
           </div>
 
           <div className="footer-contact">
-            <h4>Let’s Connect</h4>
-            <p>📩 Let’s discuss your Azure journey</p>
+            <h4>Let's Connect</h4>
+            <p>📩 Let's discuss your Azure journey</p>
             <p>Email: contact@infrabryte.com</p>
             <p>Remote Services – Global</p>
+            <div className="social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FaLinkedin />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <FaYoutube />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FaFacebook />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram />
+              </a>
+            </div>
           </div>
 
         </div>

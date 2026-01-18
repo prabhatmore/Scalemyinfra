@@ -48,7 +48,7 @@ with security best practices.
       "Secure and scalable hosting for websites and business applications.",
     about: `
 We host your websites and applications on Azure with built-in security,
-monitoring, and backups. Whether it’s a business website or a production app,
+monitoring, and backups. Whether it's a business website or a production app,
 your workloads are protected and scalable.
     `,
     points: [
@@ -57,6 +57,31 @@ your workloads are protected and scalable.
       "Monitoring & alerts",
       "Automated backups",
     ],
+  },
+
+  "explore-free-azure-services": {
+    title: "Explore free Azure services",
+    intro:
+      "Try the Cloud — Free, Simple, and Risk-Free",
+    about: `
+Not sure how cloud really works for your business? We make it easy to experience Microsoft Azure before making any commitment.
+
+We offer a free cloud trial service where you can move a small or non-critical application to Azure and see the results for yourself. This allows you to understand performance, reliability, security, and cost—without risk or disruption.
+    `,
+    points: [
+      "See how your application performs on the cloud",
+      "Understand real-world speed, availability, and reliability",
+      "Learn how cloud security and backups work",
+      "Get clarity on costs and scalability",
+      "Gain confidence before migrating critical systems",
+    ],
+    whyMatters: "Cloud adoption doesn't have to be complex or risky. By testing with a less critical application, you get hands-on experience and clear insights—making future cloud decisions simple and informed.",
+    whoIsThisFor: [
+      "Businesses new to cloud",
+      "Teams exploring Azure for the first time",
+      "Organizations planning a future cloud migration",
+    ],
+    cta: "📩 Start your free cloud test today and experience how Microsoft Azure can support your business—before you move fully to the cloud.",
   },
 
   /* ===== SECURE & RUN YOUR BUSINESS ===== */
@@ -188,12 +213,36 @@ function ServiceDetail({ onQuoteClick }) {
         <h3>About this service</h3>
         <p className="service-about">{service.about}</p>
 
-        <h4>What you get</h4>
+        <h4>What You Can Expect</h4>
         <ul className="service-list">
           {service.points.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
         </ul>
+
+        {service.whyMatters && (
+          <>
+            <h3>Why This Matters</h3>
+            <p className="service-about">{service.whyMatters}</p>
+          </>
+        )}
+
+        {service.whoIsThisFor && (
+          <>
+            <h3>Who Is This For?</h3>
+            <ul className="service-list">
+              {service.whoIsThisFor.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {service.cta && (
+          <p className="service-cta-text" style={{ marginTop: '24px', fontWeight: '600', fontSize: '16px' }}>
+            {service.cta}
+          </p>
+        )}
       </div>
 
       {/* CTA */}

@@ -7,6 +7,7 @@ import {
   FaDatabase,
   FaShieldAlt,
   FaMoneyBillWave,
+  FaGift,
 } from "react-icons/fa";
 
 /* =========================
@@ -14,6 +15,12 @@ import {
 ========================= */
 const servicesData = {
   start: [
+    {
+      title: "Explore free Azure services",
+      desc: "Bring your vision to life with free services. These services are free up to the specified monthly amounts. Some are always free to all Azure customers, and some are free for 12 months to new customers only.",
+      slug: "explore-free-azure-services",
+      icon: <FaGift />,
+    },
     {
       title: "Cloud Setup & Basics",
       desc: "Azure account setup with secure identity, access controls, and cost-friendly configuration.",
@@ -69,6 +76,12 @@ const servicesData = {
       slug: "Cloud-Security-Posture-Improvement",
       icon: <FaRocket />,
     },
+    {
+      title: "Azure Health & Performance Optimization",
+      desc: "We make your Azure run faster and more stable without increasing cost.",
+      slug: "Azure-Health-Performance-Optimization",
+      icon: <FaProjectDiagram />,
+    },
   ],
   modernization : [
     {
@@ -90,26 +103,6 @@ const servicesData = {
       icon: <FaRocket />,
     },
   ],
-  Automation : [
-    {
-      title: "Cloud Cost Optimization",
-      desc: "Cost monitoring, rightsizing, and budget controls.",
-      slug: "cloud-cost-optimization",
-      icon: <FaMoneyBillWave />,
-    },
-    {
-      title: "Azure Health & Performance Optimization ",
-      desc: "We make your Azure run faster and more stable without increasing cost.",
-      slug: "Azure-Health-Performance-Optimization",
-      icon: <FaProjectDiagram />,
-    },
-    {
-      title: "Cloud Security Posture Improvement ",
-      desc: "Track score improvements monthly.",
-      slug: "Cloud-Security-Posture-Improvement",
-      icon: <FaRocket />,
-    },
-  ],
 };
 
 /* =========================
@@ -125,7 +118,7 @@ function Services() {
 
         {/* HEADER */}
         <div className="services-header">
-          <h2>Our Azure & Kubernetes Services</h2>
+          <h2>Empower Your Business with Managed Cloud Services</h2>
           <p>
             Simple, secure, and scalable Microsoft Azure services —
             from first setup to enterprise growth.
@@ -159,12 +152,6 @@ function Services() {
             onClick={() => setActiveTab("modernization")}
           >
             CLOUD MODERNIZATION
-          </button>
-           <button
-            className={activeTab === "Automation" ? "active" : ""}
-            onClick={() => setActiveTab("Automation")}
-          >
-          AUTOMATION
           </button>
         </div>
 

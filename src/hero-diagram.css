@@ -6,7 +6,7 @@ SERVICES SECTION – HARD RESET
 .services-section {
   position: relative;
   background: #ffffff; /* 🔥 removes hero bleed */
-  padding: 120px 24px 140px;
+  padding: 20px 24px 140px; /* reduced top padding to remove gap */
   margin-top: 0;
   z-index: 1;
 }
@@ -39,7 +39,7 @@ SERVICES SECTION – FINAL
 #services,
 .services-section {
   background: #ffffff;
-  padding: 80px 24px 120px; /* reduced top padding */
+  padding: 20px 24px 120px; /* minimal top padding to remove gap */
   margin-top: 0;
 }
 .services-header {
@@ -63,7 +63,7 @@ SERVICES SECTION – FINAL
 .hero::after {
   content: "";
   display: block;
-  height: 40px;
+  height: 0; /* removed extra spacing */
 }
 
 /* =========================
@@ -71,7 +71,7 @@ SHIFT SERVICES SECTION DOWN
 ========================= */
 #services,
 .services-section {
-  margin-top: 190px;   /* ⬅ increase/decrease as needed */
+  margin-top: 0;   /* removed gap between hero and services */
 }
 
 #services {
@@ -367,6 +367,7 @@ AZURE HERO VISUAL (STATIC)
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .text-logo {
   position: relative;

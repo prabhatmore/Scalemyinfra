@@ -19,17 +19,13 @@ function Hero({ openQuoteModal }) {
           <li>On-prem to Azure migrations</li>
           <li>Secure infrastructure Build</li>
           <li>Cloud Operations & Support</li>
-
-         <div className="hero-cta fade-up fade-delay-2">
-  <button className="btn-primary">Talk to a Cloud Expert</button>
-</div>
         </div>
 
         {/* RIGHT */}
        
  <div className="hero-right">
           <img
-            src="/images/cloud_azure.gif"
+            src="/images/cloud_latest.png"
             alt="Azure Cloud Engineering"
             className="hero-illustration"
           />

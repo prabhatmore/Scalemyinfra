@@ -16,8 +16,8 @@ function QuoteModal({ isOpen, onClose }) {
         <input type="tel" placeholder="Mobile Number" />
         <input type="text" placeholder="Company / Location" />
 
-        <select>
-          <option>Looking For</option>
+        <select defaultValue="">
+          <option value="" disabled>Looking For</option>
           <option>Azure & AKS Consulting</option>
           <option>Cloud Migration</option>
           <option>Cost Optimization</option>
