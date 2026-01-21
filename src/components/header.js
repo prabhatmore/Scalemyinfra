@@ -12,8 +12,7 @@ function Header({ onQuoteClick }) {
           className="text-logo"
           title="We Build. You Scale."
         >
-          <span className="logo-scale">Infra</span>
-          <span className="logo-my">bryte</span>
+          <span className="logo-scale">Infra</span><span className="logo-my">Bryte</span>
         </a>
 
 

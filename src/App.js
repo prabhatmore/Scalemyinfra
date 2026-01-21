@@ -10,6 +10,7 @@ import QuoteModal from "./components/QuoteModal";
 // Home sections
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import WhyChoose from "./components/WhyChoose";
 import Outcomes from "./components/Outcomes";
 import Process from "./components/Process";
 import CTA from "./components/CTA";
@@ -49,6 +50,7 @@ function App() {
             <>
               <Hero openQuoteModal={openQuoteModal} />
               <Services openQuoteModal={openQuoteModal} />
+              <WhyChoose />
               <Outcomes />
               <Process />
               <CTA onQuoteClick={openQuoteModal} />

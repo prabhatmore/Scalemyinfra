@@ -1,6 +1,6 @@
 function Hero({ openQuoteModal }) {
   return (
-    <section className="hero hero-bliss-style">
+    <section className="hero hero-bliss-style" style={{ backgroundImage: "url('/images/hero.png')", backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }}>
       <div className="hero-container">
         {/* LEFT */}
         <div className="hero-left">
@@ -8,13 +8,9 @@ function Hero({ openQuoteModal }) {
   Build. <span className="highlight">Migrate.</span> Secure. Scale.
 </h1>
 
-<p className="hero-subtitle fade-up fade-delay-1">
-  Cloud & infrastructure services that just work.
-</p>
           <p className="hero-subtitle"> 
             <div></div>
-            We help businesses design, migrate, and manage secure Azure cloud - with zero and
-            Confusion and real result.
+            We help businesses design, migrate, and manage secure Azure cloud environments with zero confusion and real results.
           </p>
           <li>On-prem to Azure migrations</li>
           <li>Secure infrastructure Build</li>
@@ -24,11 +20,6 @@ function Hero({ openQuoteModal }) {
         {/* RIGHT */}
        
  <div className="hero-right">
-          <img
-            src="/images/cloud_latest.png"
-            alt="Azure Cloud Engineering"
-            className="hero-illustration"
-          />
            <div className="hero-image">
     </div>
         </div>

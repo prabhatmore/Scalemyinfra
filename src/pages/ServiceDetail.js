@@ -10,12 +10,14 @@ const serviceDetails = {
     title: "Cloud Setup & Basics",
     intro:
       "New to cloud? We help organizations understand what cloud is, how it works, and how to plan a smooth transition from on-premise infrastructure to the cloud.",
+    introImage: "/images/new2cloud.png",
+    introImageAlt: "Cloud adoption journey illustration showing business professionals moving towards cloud",
     about: `
-This service is designed for businesses taking their first step into the cloud.
-We set up your Azure environment with best practices from day one, ensuring
-security, proper access control, and cost visibility.
+This service is created for businesses that are starting their cloud journey for the first time. We help you set up Microsoft Azure the right way from day one, so you don't have to worry about confusion, security gaps, or unexpected costs later.
 
-You get a clean, safe Azure foundation without complexity or vendor lock-in.
+Instead of jumping straight into servers and applications, we first build a strong and clean cloud foundation. This ensures your Azure environment is secure, well-organized, easy to manage, and ready to scale as your business grows.
+
+You get a simple, safe, and future-ready Azure setup—without unnecessary complexity or long-term vendor lock-in.
     `,
     points: [
       "Azure account & subscription setup",
@@ -46,6 +48,8 @@ with security best practices.
     title: "Website & App Hosting",
     intro:
       "Secure and scalable hosting for websites and business applications.",
+    introImage: "/images/hosting.png",
+    introImageAlt: "Website and app hosting illustration",
     about: `
 We host your websites and applications on Azure with built-in security,
 monitoring, and backups. Whether it's a business website or a production app,
@@ -183,6 +187,128 @@ improve scalability, and enable automation.
       "Observability & monitoring",
     ],
   },
+
+  "Cloud-Security-Posture-Improvement": {
+    title: "Cloud Security Posture Improvement",
+    intro:
+      "As organizations move workloads to the cloud, security risks increase due to misconfigurations, excessive permissions, and lack of visibility. Our Cloud Security Posture Improvement service helps you continuously assess, strengthen, and maintain a secure Azure cloud environment.",
+    about: `
+We identify security gaps, reduce attack surfaces, and align your cloud infrastructure with industry best practices and compliance standards—without impacting performance or business continuity.
+    `,
+    points: [
+      "Security Assessment & Baseline - Evaluate your Azure environment against Microsoft security benchmarks and best practices to identify misconfigurations, vulnerabilities, and policy gaps.",
+      "Identity & Access Hardening - Implement least-privilege access, role-based access control (RBAC), multi-factor authentication (MFA), and conditional access policies.",
+      "Network Security Optimization - Secure virtual networks using NSGs, firewalls, private endpoints, and zero-trust network principles.",
+      "Threat Detection & Monitoring - Enable and fine-tune Microsoft Defender for Cloud, security alerts, and centralized logging for real-time threat visibility.",
+      "Compliance & Governance - Enforce security policies using Azure Policy and governance controls to meet compliance requirements such as ISO, SOC, HIPAA, or internal standards.",
+      "Continuous Improvement - Ongoing monitoring and recommendations to keep your cloud security posture strong as your environment evolves.",
+    ],
+    whyMatters: `
+Reduced risk of breaches and misconfigurations
+
+Improved visibility across cloud resources
+
+Strong identity and access controls
+
+Compliance-ready cloud environment
+
+Continuous security posture monitoring
+
+Alignment with Azure security best practices
+    `,
+    whoIsThisFor: [
+      "Businesses migrating from on-prem to Azure",
+      "Organizations with growing Azure environments",
+      "Companies facing compliance or audit requirements",
+      "Teams lacking in-house cloud security expertise",
+    ],
+  },
+
+  "Azure-Health-Performance-Optimization": {
+    title: "Azure Health & Performance Optimization",
+    intro:
+      "As Azure environments grow, performance issues, resource inefficiencies, and hidden bottlenecks can impact application reliability and user experience. Our Azure Health & Performance Optimization service ensures your cloud workloads run efficiently, reliably, and at peak performance.",
+    about: `
+We proactively monitor, analyze, and optimize your Azure infrastructure to improve availability, performance, and operational stability—while controlling costs and aligning with Azure best practices.
+    `,
+    points: [
+      "Azure Environment Health Assessment - Evaluate the overall health of compute, storage, networking, and platform services to identify performance gaps and risks.",
+      "Performance Bottleneck Analysis - Identify CPU, memory, disk I/O, network latency, and application-level issues affecting workload performance.",
+      "Resource Right-Sizing - Optimize VM sizes, storage tiers, and service configurations to ensure optimal performance without over-provisioning.",
+      "Monitoring & Alerting Optimization - Configure Azure Monitor, Log Analytics, and alerts for proactive issue detection and faster resolution.",
+      "Availability & Resilience Improvements - Enhance reliability using availability zones, backup strategies, and failover mechanisms.",
+      "Continuous Optimization - Ongoing reviews and recommendations to maintain performance as workloads and usage patterns evolve.",
+    ],
+    whyMatters: `
+Improved application performance and responsiveness
+
+Higher availability and reduced downtime
+
+Optimized resource utilization
+
+Faster issue detection and resolution
+
+Better user experience
+
+Stable and scalable Azure environment
+    `,
+    whoIsThisFor: [
+      "Production workloads running on Azure",
+      "Applications facing performance or reliability issues",
+      "Businesses scaling Azure environments",
+      "Teams needing proactive Azure monitoring and tuning",
+    ],
+    cta: "A high-performing, reliable, and optimized Azure environment that supports business growth while minimizing operational risk and performance disruptions.",
+  },
+
+  /* ===== CLOUD MODERNIZATION ===== */
+  "azure-devops": {
+    title: "Azure DevOps",
+    intro:
+      "Streamline your development and deployment processes with Azure DevOps.",
+    about: `
+Azure DevOps provides a comprehensive set of tools for planning, building, testing, and deploying applications. We help you set up and optimize your DevOps pipeline for faster, more reliable software delivery.
+    `,
+    points: [
+      "Azure DevOps organization and project setup",
+      "CI/CD pipeline configuration",
+      "Source control and code management",
+      "Automated testing and deployment",
+      "Release management and monitoring",
+    ],
+  },
+
+  "infrastructure-as-code": {
+    title: "Infrastructure as Code",
+    intro:
+      "Manage your Azure infrastructure through code for consistency, repeatability, and version control.",
+    about: `
+We help you implement Infrastructure as Code (IaC) practices using tools like ARM templates, Terraform, or Bicep to automate and manage your Azure resources efficiently.
+    `,
+    points: [
+      "IaC tool selection and setup",
+      "Infrastructure templates and modules",
+      "Version control and collaboration",
+      "Automated provisioning and updates",
+      "Infrastructure testing and validation",
+    ],
+  },
+
+  "aks": {
+    title: "Azure Kubernetes Service (AKS)",
+    intro:
+      "Deploy and manage containerized applications at scale with Azure Kubernetes Service.",
+    about: `
+We help you design, deploy, and manage AKS clusters for running containerized applications with high availability, scalability, and security.
+    `,
+    points: [
+      "AKS cluster design and deployment",
+      "Container orchestration and management",
+      "Networking and security configuration",
+      "CI/CD integration for containers",
+      "Monitoring and scaling strategies",
+    ],
+  },
 };
 
 /* =========================
@@ -203,11 +329,21 @@ function ServiceDetail({ onQuoteClick }) {
   }
 
   return (
-    <section className="service-detail">
+    <section className={`service-detail service-${slug}`}>
       <Breadcrumbs />
 
       <h1>{service.title}</h1>
       <p className="service-intro">{service.intro}</p>
+
+      {service.introImage && (
+        <div className="service-intro-image">
+          <img 
+            src={service.introImage} 
+            alt={service.introImageAlt || service.title}
+            className="service-image"
+          />
+        </div>
+      )}
 
       <div className="service-box">
         <h3>About this service</h3>
