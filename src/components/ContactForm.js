@@ -11,7 +11,9 @@ function ContactForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
+  // Handle input changes
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,22 +21,32 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // Handle form submit
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.interest) {
-      setError("Please fill in required fields.");
-      return;
-    }
+  setError("");
 
-    setError("");
+  try {
+    await fetch("", {
+      method: "POST",
+      mode: "no-cors", //  REQUIRED
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // If no error thrown → SUCCESS
     setSubmitted(true);
 
-    // 🔜 Later: send to backend / email / CRM
-    console.log("Form submitted:", formData);
-  };
+  } catch (err) {
+    setError("Submission failed. Please try again.");
+  }
+};
 
+
+  // Success state
   if (submitted) {
     return (
       <div className="form-success">
@@ -95,8 +107,8 @@ function ContactForm() {
 
       {error && <p className="form-error">{error}</p>}
 
-      <button type="submit" className="btn-primary">
-        Book Free Consultation
+      <button type="submit" className="btn-primary" disabled={loading}>
+        {loading ? "Submitting..." : "Book Free Consultation"}
       </button>
     </form>
   );
