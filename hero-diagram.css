@@ -1,0 +1,547 @@
+
+/* =========================
+SERVICES SECTION – HARD RESET
+========================= */
+#services,
+.services-section {
+  position: relative;
+  background: #ffffff; /* 🔥 removes hero bleed */
+  padding: 20px 24px 140px; /* reduced top padding to remove gap */
+  margin-top: 0;
+  z-index: 1;
+}
+
+.services-header,
+.services-section h2,
+.services-section p {
+  text-align: center;
+}
+
+.services-header {
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.services-header p {
+  color: #475569;
+  font-size: 16px;
+}
+
+/* =========================
+SERVICES SECTION – FINAL
+========================= */
+#services,
+.services-section {
+  background: #ffffff;
+  padding: 20px 24px 120px; /* minimal top padding to remove gap */
+  margin-top: 0;
+}
+.services-header {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.services-header p {
+  font-size: 16px;
+  color: #475569;
+}
+
+
+.hero::after {
+  content: "";
+  display: block;
+  height: 0; /* removed extra spacing */
+}
+
+/* =========================
+SHIFT SERVICES SECTION DOWN
+========================= */
+#services,
+.services-section {
+  margin-top: 0;   /* removed gap between hero and services */
+}
+
+#services {
+  background: #ffffff;
+}
+
+
+/* ================================
+   HERO TYPOGRAPHY (KEEP AS IS)
+================================ */
+
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+   white-space: nowrap; 
+}
+
+.hero-left h1 span {
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ================================
+   SECTION TITLES
+================================ */
+
+.section-title,
+.services-title {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* ================================
+   CARDS
+================================ */
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn-primary {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  font-size: 14px;
+}
+
+
+/* =========================
+HERO RIGHT – STATIC LANDING ZONE
+========================= */
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main card */
+.lz-card {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 98, 254, 0.10),
+    rgba(15, 98, 254, 0.03)
+  );
+  border-radius: 28px;
+  padding: 48px;
+  width: 420px;
+  text-align: center;
+}
+
+/* Center pill */
+.lz-center {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+/* Items grid */
+.lz-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Individual circle */
+.lz-item {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0b1f3a;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
+  .hero-visual-card {
+    width: 340px;
+    height: 340px;
+  }
+
+  .hero-lz-item {
+    width: 78px;
+    height: 78px;
+    font-size: 12px;
+  }
+}
+
+/* =========================
+AZURE HERO VISUAL (STATIC)
+========================= */
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main visual container */
+.azure-visual {
+  width: 460px;
+  height: 460px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top, #eef4ff 0%, #e6efff 45%, #f7faff 100%);
+  box-shadow: 0 30px 70px rgba(15, 98, 254, 0.18);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center pill */
+.azure-center-pill {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.35);
+}
+
+/* Icon grid */
+.azure-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+/* Individual icon */
+.azure-icon {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.azure-icon span {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0b1f3a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .azure-visual {
+    width: 340px;
+    height: 340px;
+    padding: 28px;
+  }
+
+  .azure-icon {
+    width: 78px;
+    height: 78px;
+    font-size: 18px;
+  }
+
+  .azure-icon span {
+    font-size: 11px;
+  }
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.site-logo {
+  height: auto;
+  max-height: 56px;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+}
+.navbar {
+  height: 80px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  background: #fff;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.text-logo {
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.logo-scale {
+  color: #4aa3c7;
+}
+
+.logo-my {
+  color: #e5533d;
+  margin: 0 2px;
+}
+
+.logo-infra {
+  color: #1f2933;
+}
+
+.text-logo:hover {
+  opacity: 0.9;
+}
+
+
+.text-logo:hover .logo-scale {
+  color: #3b8aa0;
+}
+
+.text-logo:hover .logo-my {
+  color: #d94a24;
+}
+
+@media (max-width: 768px) {
+  .text-logo {
+    font-size: 20px;
+  }
+  .logo-img {
+    height: 44px;
+    max-height: 48px;
+  }
+}
+
+.text-logo {
+  transition: transform 0.2s ease;
+}
+
+.text-logo:hover {
+  transform: translateY(-1px);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-logo {
+  position: relative;
+}
+
+.text-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4aa3c7;
+  transition: width 0.25s ease;
+}
+
+.text-logo:hover::after {
+  width: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.text-logo {
+  font-size: 23px;   /* from 22 */
+  letter-spacing: 0.4px;
+}
+
+.nav-container {
+  gap: 64px;
+}
+
+.text-logo:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.solutions-hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0b1f3a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.solutions-hero p {
+  max-width: 720px;
+  margin: 0 auto 64px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #475569;
+  text-align: center;
+}
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1024px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.solution-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px 30px;
+  transition: all 0.25s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 98, 254, 0.12);
+  border-color: #2563eb;
+}
+.solution-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin-bottom: 14px;
+}
+.solution-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 18px;
+}
+.solution-card ul {
+  padding-left: 18px;
+}
+
+.solution-card li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+.solutions-section {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f7f9fc 100%
+  );
+}
+.solutions-cta {
+  width: 100%;
+  margin: 100px 0 0;
+  padding: 100px 24px;
+  background-color: #0b1f3a;
+  text-align: center;
+}
+
+.solutions-cta h2 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.solutions-cta p {
+  max-width: 640px;
+  margin: 0 auto 32px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.solutions-cta .cta-button {
+  background: #22c55e;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.35);
+}
+
+.solutions-cta .cta-button:hover {
+  background: #16a34a;
+}
+.solutions-cta {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.solutions-cta {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
