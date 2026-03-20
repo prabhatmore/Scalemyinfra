@@ -6,45 +6,149 @@ import Breadcrumbs from "../components/Breadcrumbs";
 ========================= */
 const serviceDetails = {
   /* ===== START YOUR CLOUD JOURNEY ===== */
-  "cloud-setup-basics": {
-    title: "Cloud Setup & Basics",
+
+  "Tally-on-Cloud": {
+  title: "Tally on Cloud",
+  intro:
+    "Tally on Cloud means your Tally software and data are hosted on a secure cloud server instead of a local computer. You can access it through internet from any devices like laptop, desktop, or even tablet.",
+  introImage: "/images/tallyoncloud.png",
+  introImageAlt: "Cloud adoption journey illustration",
+  about: `
+Move your Tally accounting software to cloud and use it just like your office system, but without location restrictions.
+  `,
+  points: [
+    "Access Tally from office, home, or on the go — all you need is internet.",
+    "Keep your data safe and secure with automatic backups.",
+    "Enjoy fast and smooth performance.",
+    "Multiple users can work at the same time.",
+    "No manual backups required.",
+    "Access latest data anytime.",
+  ],
+
+  plans: [
+    {
+      name: "Starter Plan",
+      price: "₹7,999 / Month",
+      highlight: false,
+      features: [
+        "Up to 5 Users",
+        "2 vCPU & 8 GB RAM",
+        "Secure Hosting",
+        "Managed Disk Storage",
+        "Daily Backup Included",
+        "Access from Anywhere (RDP)",
+        "Multi-User Support",
+        "Basic Security Setup",
+        "Support & Monitoring"
+      ]
+    },
+    {
+      name: "Business Plan",
+      price: "₹14,999 / Month",
+      highlight: true,
+      features: [
+        "Up to 10 Users",
+        "4 vCPU & 16 GB RAM",
+        "Secure Hosting",
+        "Managed Disk Storage",
+        "Daily Backup Included",
+        "Access from Anywhere (RDP)",
+        "Enhanced Performance",
+        "Advanced Security Setup",
+        "Priority Support"
+      ]
+    },
+    {
+      name: "Enterprise Plan",
+      price: "₹24,999 / Month",
+      highlight: false,
+      features: [
+        "Up to 20 Users",
+        "8 vCPU & 32 GB RAM",
+        "Premium Managed Disk Storage",
+        "Daily Backup + DR",
+        "Access via RDP / VPN",
+        "Advanced Security",
+        "Dedicated Support",
+        "24/7 Monitoring"
+      ]
+    }
+  ]
+},
+
+  /* ===== DIGITAL WORKPLACE ===== */
+
+  "Digital-Workplace-Setup": {
+    title: "Digital Workplace Setup",
     intro:
-      "New to cloud? We help organizations understand what cloud is, how it works, and how to plan a smooth transition from on-premise infrastructure to the cloud.",
-    introImage: "/images/new2cloud.png",
-    introImageAlt: "Cloud adoption journey illustration showing business professionals moving towards cloud",
-    about: `
-This service is created for businesses that are starting their cloud journey for the first time. We help you set up Microsoft Azure the right way from day one, so you don't have to worry about confusion, security gaps, or unexpected costs later.
+      "Set up your complete business workspace in the cloud — including email, documents, collaboration tools, and security. Everything your company needs to start and operate efficiently from day one.",
+      introImage: "/images/digitalworkspace.png",
+      introImageAlt: "Digital workplace setup illustration",
+      about: `
+We help you build a fully functional digital office using cloud tools, so your team can work from anywhere without dependency on physical systems.
 
-Instead of jumping straight into servers and applications, we first build a strong and clean cloud foundation. This ensures your Azure environment is secure, well-organized, easy to manage, and ready to scale as your business grows.
-
-You get a simple, safe, and future-ready Azure setup—without unnecessary complexity or long-term vendor lock-in.
+From professional email setup to document management, team collaboration, and secure access — we handle everything required to get your business up and running quickly and securely.
     `,
     points: [
-      "Azure account & subscription setup",
-      "Identity, RBAC & basic security",
-      "Cost management & budgets",
-      "Best-practice resource structure",
+      "Professional business email setup",
+      "Microsoft Teams for meetings and collaboration",
+      "Document management using OneDrive & SharePoint",
+      "Online Word, Excel, and PowerPoint access",
+      "Secure user access with identity and basic security",
+      "Centralized file storage and sharing",
+      "Easy team communication and task coordination",
+      "Setup and configuration for all users",
+      
     ],
+  plans: [
+    {
+      name: "Microsoft 365 Business Premium",
+      price: "₹2,196.00 / Monthly",
+      highlight: false,
+      includesTitle: "Everything your business needs to be more productive and secure",
+      features: [
+        "For one person",
+        "Use on multiple devices",
+        "Use on PCs, Macs, phones & tablets",
+        "Productivity apps with Microsoft Copilot",
+        "Use Copilot in selected apps with work files in a secure way",
+        "Higher usage to create and edit AI images",
+        "Video editor with 4K export, brand kits, filters and effects",
+        "Data and device security",
+        "All-day video calling and Copilot in Teams",
+      ]
+    },
+    {
+      name: "Microsoft 365 Family",
+      price: "₹8,199 / Year",
+      highlight: true,
+      includesTitle: "Everything in Microsoft 365 Personal, plus:",
+      features: [
+        "Up to 6 users",
+        "1 TB storage per user",
+        "Use on multiple devices",
+        "Premium Office apps",
+        "Family safety features"
+      ]
+    },
+    {
+      name: "Microsoft 365 Premium",
+      price: "₹19,999 / Year",
+      highlight: false,
+      includesTitle: "Everything in Microsoft 365 Family, plus:",
+      features: [
+        "Advanced productivity tools",
+        "Enhanced security",
+        "AI-powered features (Copilot ready)",
+        "Advanced collaboration tools",
+        "Priority support"
+      ]
+    }
+  ]
   },
 
-  "business-email-m365": {
-    title: "Business Email & Microsoft 365",
-    intro:
-      "Professional email and collaboration tools for modern businesses.",
-    about: `
-We help you set up Microsoft 365 so your team can collaborate securely from anywhere.
-This includes email, Teams, OneDrive, and user access management — all configured
-with security best practices.
-    `,
-    points: [
-      "Business email (Exchange Online)",
-      "Microsoft Teams & OneDrive setup",
-      "User & device access control",
-      "Security & compliance baseline",
-    ],
-  },
-
-  "website-app-hosting": {
+  "website-app-hosting":
+   {
     title: "Website & App Hosting",
     intro:
       "Secure and scalable hosting for websites and business applications.",
@@ -349,12 +453,50 @@ function ServiceDetail({ onQuoteClick }) {
         <h3>About this service</h3>
         <p className="service-about">{service.about}</p>
 
-        <h4>What You Can Expect</h4>
+        <h4>Key Benefits</h4>
         <ul className="service-list">
           {service.points.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
         </ul>
+
+        {/* ✅ ADD PRICING HERE */}
+{service.plans && (
+  <div className="pricing-section">
+    <h2 className="pricing-title">Plans & Pricing</h2>
+
+    <div className="pricing-grid">
+      {service.plans.map((plan, index) => (
+        <div
+          key={index}
+          className={`pricing-card ${plan.highlight ? "highlight" : ""}`}
+        >
+          {plan.highlight && (
+            <div className="badge">Most Popular</div>
+          )}
+
+          <h3>{plan.name}</h3>
+          <h2 className="price">{plan.price}</h2>
+
+            {/* ✅ ADD THIS */}
+  {plan.includesTitle && (
+    <h4 className="includes-title">{plan.includesTitle}</h4>
+  )}
+
+          <ul>
+            {plan.features.map((item, i) => (
+              <li key={i}>✔ {item}</li>
+            ))}
+          </ul>
+
+          <button className="btn-primary" onClick={onQuoteClick}>
+            Buy Now
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
         {service.whyMatters && (
           <>

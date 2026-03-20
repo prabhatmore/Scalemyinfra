@@ -32,6 +32,25 @@ function Solutions() {
   </ul>
 </div>
 
+{/* AVD */}
+  <div className="solution-card">
+  <span className="solution-tag">Virtual Desktop on Cloud</span>
+
+  <h3>Azure Virtual Desktop (AVD)</h3>
+
+  <p>
+    Provide secure, scalable virtual desktops and applications using Azure
+    Virtual Desktop. We design and deploy AVD environments that support remote
+    work, performance, and enterprise security requirements.
+  </p>
+
+  <ul>
+    <li>Azure Virtual Desktop design & deployment</li>
+    <li>Secure user access & identity integration</li>
+    <li>Performance optimization & cost control</li>
+  </ul>
+</div>
+
 {/* Backup */}
   <div className="solution-card">
     <span className="solution-tag">Resilience</span>
@@ -76,25 +95,6 @@ function Solutions() {
       <li>Backup & monitoring</li>
     </ul>
   </div>
-
-{/* AVD */}
-  <div className="solution-card">
-  <span className="solution-tag">Virtual Desktop on Cloud</span>
-
-  <h3>Azure Virtual Desktop (AVD)</h3>
-
-  <p>
-    Provide secure, scalable virtual desktops and applications using Azure
-    Virtual Desktop. We design and deploy AVD environments that support remote
-    work, performance, and enterprise security requirements.
-  </p>
-
-  <ul>
-    <li>Azure Virtual Desktop design & deployment</li>
-    <li>Secure user access & identity integration</li>
-    <li>Performance optimization & cost control</li>
-  </ul>
-</div>
 
 {/* Applications */}
 <div className="solution-card">
@@ -166,6 +166,87 @@ function Solutions() {
 
   
 
+      {/* CUSTOMER STORIES */}
+      <div className="solutions-hero">
+        <h1>Customer Stories</h1>
+      </div>
+
+      <div className="customer-stories-grid">
+        <article className="customer-story-card">
+          <div className="customer-story-image-wrap">
+            <img
+              src="/images/customer-story-unicidex-hero.png"
+              alt="UNICIDEX customer story"
+              className="customer-story-image"
+            />
+            <div className="customer-story-logo">
+              <img
+                src="/images/customer-story-unicidex-logo.png"
+                alt="UNICIDEX logo"
+                className="customer-story-logo-img"
+              />
+            </div>
+          </div>
+
+          <div className="customer-story-content">
+            <p className="customer-story-industry">Industry: Professional and Business Services</p>
+            <h3>Zero-trust on AVD with Microsoft 365 reflected in hybrid virtual desktops by UNICIDEX.</h3>
+
+            <div className="customer-story-footer">
+              <div className="customer-story-platform-list">
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon">A</span>
+                  <span>Azure</span>
+                </div>
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon">A</span>
+                  <span>Azure Virtual Desktop</span>
+                </div>
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon windows-icon">W</span>
+                  <span>Windows 365</span>
+                </div>
+              </div>
+              <a href="/customer-stories/unicidex" className="customer-story-btn">Read the story</a>
+            </div>
+          </div>
+        </article>
+
+        <article className="customer-story-card">
+          <div className="customer-story-image-wrap">
+            <img
+              src="/images/customer-story-pefcu.png"
+              alt="Publix Employees Federal Credit Union customer story"
+              className="customer-story-image"
+            />
+            <div className="customer-story-logo">PEFCU</div>
+          </div>
+
+          <div className="customer-story-content">
+            <p className="customer-story-industry">Industry: Financial Services</p>
+            <h3>How Publix Employees Federal Credit Union strengthened its disaster recovery strategy with Azure Local</h3>
+
+            <div className="customer-story-footer">
+              <div className="customer-story-platform-list">
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon">A</span>
+                  <span>Azure Migrate</span>
+                </div>
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon">A</span>
+                  <span>Azure Local</span>
+                </div>
+                <div className="customer-story-platform">
+                  <span className="customer-story-platform-icon">A</span>
+                  <span>Azure Site Recovery</span>
+                </div>
+              </div>
+              <a href="/customer-stories/pefcu" className="customer-story-btn">Read the story</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
       {/* CTA */}
       <div className="solutions-cta">
         <h2>Not Sure Which Solution Fits You?</h2>
@@ -182,3 +263,4 @@ function Solutions() {
 }
 
 export default Solutions;
+

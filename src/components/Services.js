@@ -16,21 +16,15 @@ import {
 const servicesData = {
   start: [
     {
-      title: "Explore free Azure services",
-      desc: "Bring your vision to life with free services. These services are free up to the specified monthly amounts. Some are always free to all Azure customers, and some are free for 12 months to new customers only.",
-      slug: "explore-free-azure-services",
+      title: "Tally on Cloud",
+      desc: "Access your Tally anytime, from anywhere securely on the cloud.",
+      slug: "Tally-on-Cloud",
       icon: <FaGift />,
     },
     {
-      title: "Cloud Setup & Basics",
-      desc: "Azure account setup with secure identity, access controls, and cost-friendly configuration.",
-      slug: "cloud-setup-basics",
-      icon: <FaCloud />,
-    },
-    {
-      title: "Business Email & Microsoft 365",
+      title: "Digital Workplace Setup ",
       desc: "Professional email, Teams, OneDrive, and secure user setup.",
-      slug: "business-email-m365",
+      slug: "Digital-Workplace-Setup",
       icon: <FaProjectDiagram />,
     },
     {
