@@ -18,15 +18,11 @@ function Contact() {
 
           <div className="about-hero-content">
             <h1>
-              Contact <span className="highlight">Infrabryte</span>
+              Let’s Get <span className="highlight">Started </span>
             </h1>
 
             <p className="contact-trust">
               ✔ No sales pressure &nbsp; ✔ Architecture-focused &nbsp; ✔ Actionable guidance
-            </p>
-
-            <p className="contact-description">
-              In today's rapidly evolving digital landscape, the cloud is the backbone of business modernization and agility. Whether you are just beginning to evaluate cloud adoption or actively planning your move to Microsoft Azure, having the right partner makes all the difference.
             </p>
 
             <p className="contact-description">

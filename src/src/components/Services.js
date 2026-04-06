@@ -45,7 +45,7 @@ const servicesData = {
     {
       title: "Secure Remote Work",
       desc: "Safe work-from-home access using Azure security best practices.",
-      slug: "secure-remote-work",
+      slug: "secure-cloud-desktop",
       icon: <FaShieldAlt />,
     },
     {

@@ -18,7 +18,7 @@ function Contact() {
 
           <div className="about-hero-content">
             <h1>
-              Contact <span className="highlight">Infrabryte</span>
+              Let’s Get <span className="highlight">Started</span>
             </h1>
 
             <p className="contact-trust">

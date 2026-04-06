@@ -1,0 +1,221 @@
+/* GLOBAL */
+.website-page {
+    font-family: "Segoe UI", sans-serif;
+    color: #0f172a;
+  }
+  
+  /* CONTAINER */
+  .ws-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* HERO */
+  .ws-hero {
+    padding: 120px 20px 100px;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    text-align: center;
+
+    height: 400px;        /* adjust 350–500px */
+    width: 100%;
+  }
+  
+  .ws-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0f172a; /* dark bold */
+  }
+  
+  .ws-hero p {
+    font-size: 18px;
+    max-width: 680px;
+    margin: 0 auto;
+    color: #475569; /* softer text */
+  }
+  
+  .ws-points {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 15px;
+    opacity: 0.9;
+  }
+  
+  /* BUTTON (PREMIUM CTA) */
+  .ws-btn {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+  }
+  
+  .ws-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.6);
+  }
+  
+  /* FEATURES */
+  .ws-features {
+    padding: 100px 20px;
+    text-align: center;
+    background: #f8fafc;
+  }
+  
+  .ws-features h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .ws-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+  
+  .ws-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+  
+  .ws-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .ws-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+  
+  /* PRICING */
+  .ws-pricing {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .ws-pricing h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .ws-pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .price-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    width: 280px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .price-card:hover {
+    transform: translateY(-6px);
+  }
+
+  
+  .price-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #6366f1;
+  }
+  
+  .price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .price-card li {
+    margin: 10px 0;
+  }
+  
+  .price-card button {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .price-card button:hover {
+    background: #6366f1;
+  }
+  
+  /* FINAL CTA */
+  /* FINAL CTA */
+  .ws-final-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+  }
+  
+  .final-cta {
+    max-width: 900px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 70px 20px;
+    border-radius: 20px;
+  
+    text-align: center;
+  
+    background: linear-gradient(135deg, #76a3b8, #86c7d1, #54969e);
+    color: #57678b;
+  
+    box-shadow: 0 20px 60px rgba(14, 165, 233, 0.3);
+  }
+  /* Heading */
+.final-cta h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtext */
+  .final-cta p {
+    margin-top: 10px;
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+  }
+  
+  /* Button */
+  .final-cta .ws-btn.large,
+  .final-cta .header-cta {
+    margin-top: 25px;
+    padding: 16px 32px;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-left: 280px;   /* adjust as needed */
+  } 

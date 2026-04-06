@@ -106,7 +106,7 @@ when incidents occur.
     ],
   },
 
-  "secure-remote-work": {
+  "secure-cloud-desktop": {
     title: "Secure Remote Work",
     intro:
       "Enable safe work-from-home and remote access for your team.",

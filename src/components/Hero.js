@@ -9,7 +9,7 @@ function Hero({ openQuoteModal }) {
 </h1>
 
           <p className="hero-subtitle"> 
-            <div></div>
+            
             We help businesses design, migrate, and manage secure Azure cloud environments with zero confusion and real results.
           </p>
           <li>On-prem to Azure migrations</li>

@@ -35,6 +35,7 @@ function Footer() {
             <p>📩 Let's discuss your Azure journey</p>
             <p>Email: contact@infrabryte.com</p>
             <p>Remote Services – Global</p>
+
             <div className="social-icons">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedin />
@@ -56,22 +57,24 @@ function Footer() {
         {/* Legal bar */}
         <div className="legal-footer">
           <div className="legal-container">
-            <a href="#" onClick={(e) => { e.preventDefault(); setShowPrivacy(true); }}>
+
+            <button className="footer-link" onClick={() => setShowPrivacy(true)}>
               Privacy Statement
-            </a>
+            </button>
 
-            <a href="#" onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>
+            <button className="footer-link" onClick={() => setShowTerms(true)}>
               Terms & Conditions
-            </a>
+            </button>
 
-            <a href="#" onClick={(e) => { e.preventDefault(); setShowCode(true); }}>
+            <button className="footer-link" onClick={() => setShowCode(true)}>
               Code of Business Conduct
-            </a>
+            </button>
 
             <span>© 2026 Infrabryte | All rights reserved</span>
           </div>
         </div>
-      </footer>
+
+      </footer> {/* ✅ FIXED: footer properly closed */}
 
       {/* Privacy Modal */}
       {showPrivacy && (
@@ -79,13 +82,11 @@ function Footer() {
           <div className="modal-content">
             <button className="modal-close" onClick={() => setShowPrivacy(false)}>×</button>
             <h2>Privacy Statement</h2>
-
             <p>
               Infrabryte is committed to protecting the privacy and confidentiality
               of personal and business information collected through our website
               and services.
             </p>
-
             <p>
               Information is used solely for service delivery, security, and
               compliance purposes and is never sold or misused.
@@ -94,18 +95,16 @@ function Footer() {
         </div>
       )}
 
-      {/* Terms & Conditions Modal */}
+      {/* Terms Modal */}
       {showTerms && (
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="modal-close" onClick={() => setShowTerms(false)}>×</button>
             <h2>Terms & Conditions</h2>
-
             <p>
               By accessing or using Infrabryte’s website and services, you agree
               to comply with these Terms & Conditions.
             </p>
-
             <p>
               Services are provided on a best-effort basis. Infrabryte is not
               liable for indirect or consequential damages.
@@ -114,24 +113,21 @@ function Footer() {
         </div>
       )}
 
-      {/* Code of Business Conduct Modal */}
+      {/* Code Modal */}
       {showCode && (
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="modal-close" onClick={() => setShowCode(false)}>×</button>
             <h2>Code of Business Conduct</h2>
-
             <p>
               Infrabryte is committed to conducting business with integrity,
               transparency, and ethical responsibility.
             </p>
-
             <p>
               All employees, partners, and contractors are expected to comply
               with applicable laws, avoid conflicts of interest, and uphold
               confidentiality and data security.
             </p>
-
             <p>
               Any form of bribery, corruption, or unethical behavior is strictly
               prohibited.

@@ -22,6 +22,7 @@ import Contact from "./pages/contact";
 import ServiceDetail from "./pages/ServiceDetail";
 import CustomerStoryUnicidex from "./pages/customerStoryUnicidex";
 import CustomerStoryPefcu from "./pages/customerStoryPefcu";
+import WebsiteService from "./pages/WebsiteService";
 
 // ✅ ADD THIS IMPORT (MISSING BEFORE)
 import ServicesPage from "./components/Services";
@@ -66,6 +67,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/customer-stories/unicidex" element={<CustomerStoryUnicidex />} />
         <Route path="/customer-stories/pefcu" element={<CustomerStoryPefcu />} />
+        <Route path="/build-website" element={<WebsiteService />} />
 
         {/* Services pages */}
         <Route

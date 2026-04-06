@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  FaCloud,
   FaProjectDiagram,
   FaRocket,
   FaDatabase,
@@ -43,32 +42,32 @@ const servicesData = {
       icon: <FaDatabase />,
     },
     {
-      title: "Secure Remote Work",
+      title: "Secure Cloud Desktop",
       desc: "Safe work-from-home access using Azure security best practices.",
-      slug: "secure-remote-work",
+      slug: "azure-virtual-desktop",
       icon: <FaShieldAlt />,
     },
     {
-      title: "Cloud Support & Maintenance",
-      desc: "Monitoring, troubleshooting, patching, and health checks.",
-      slug: "cloud-support-maintenance",
-      icon: <FaShieldAlt />,
+      title: "Cloud Security & Protection",
+      desc: "Track score improvements monthly.",
+      slug: "cloud-infrastructure-security",
+      icon: <FaRocket />,
     },
   ],
 
   grow: [
     {
-      title: "Cloud Cost Optimization",
-      desc: "Cost monitoring, rightsizing, and budget controls.",
-      slug: "cloud-cost-optimization",
+      title: "Cloud Cost Assessment & Optimization",
+      desc: "Identify waste, reduce costs, and gain full visibility into your cloud spending.",
+      slug: "cloud-cost-optimization-assessment",
       icon: <FaMoneyBillWave />,
     },
 
     {
-      title: "Cloud Security Posture Improvement ",
-      desc: "Track score improvements monthly.",
-      slug: "Cloud-Security-Posture-Improvement",
-      icon: <FaRocket />,
+      title: "24×7 Cloud Support & Maintenance",
+      desc: "Monitoring, troubleshooting, patching, and health checks.",
+      slug: "cloud-support-maintenance",
+      icon: <FaShieldAlt />,
     },
     {
       title: "Azure Health & Performance Optimization",
@@ -79,9 +78,9 @@ const servicesData = {
   ],
   modernization : [
     {
-      title: "Azure Devops",
-      desc: "Cost monitoring, rightsizing, and budget controls.",
-      slug: "azure-devops",
+      title: "Application & Data Modernization",
+      desc: "Move from server-based infrastructure to fully managed cloud services.",
+      slug: "application-data-modernization",
       icon: <FaMoneyBillWave />,
     },
     {

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 
+
 /* =========================
    SERVICE DETAILS (MATCHING SLUGS)
 ========================= */
@@ -11,7 +12,7 @@ const serviceDetails = {
   title: "Tally on Cloud",
   intro:
     "Tally on Cloud means your Tally software and data are hosted on a secure cloud server instead of a local computer. You can access it through internet from any devices like laptop, desktop, or even tablet.",
-  introImage: "/images/tallyoncloud.png",
+  introImage: "/images/tallyoncloud.jpg",
   introImageAlt: "Cloud adoption journey illustration",
   about: `
 Move your Tally accounting software to cloud and use it just like your office system, but without location restrictions.
@@ -90,175 +91,605 @@ We help you build a fully functional digital office using cloud tools, so your t
 From professional email setup to document management, team collaboration, and secure access — we handle everything required to get your business up and running quickly and securely.
     `,
     points: [
-      "Professional business email setup",
-      "Microsoft Teams for meetings and collaboration",
-      "Document management using OneDrive & SharePoint",
-      "Online Word, Excel, and PowerPoint access",
-      "Secure user access with identity and basic security",
-      "Centralized file storage and sharing",
-      "Easy team communication and task coordination",
-      "Setup and configuration for all users",
+      "📧 Email Setup – Business email with custom domain",
+  "🤝 Collaboration – Microsoft Teams for chat & meetings",
+  "☁️ Storage – OneDrive & SharePoint for file management",
+  "📊 Productivity – Word, Excel, PowerPoint access",
+  "🔐 Security – MFA & secure identity access",
+  "💻 Device Setup – Laptop & mobile configuration",
+  "🔄 Migration – Email and file migration to cloud",
+  "👥 User Setup – User creation & access control"
       
     ],
-  plans: [
-    {
-      name: "Microsoft 365 Business Premium",
-      price: "₹2,196.00 / Monthly",
-      highlight: false,
-      includesTitle: "Everything your business needs to be more productive and secure",
-      features: [
-        "For one person",
-        "Use on multiple devices",
-        "Use on PCs, Macs, phones & tablets",
-        "Productivity apps with Microsoft Copilot",
-        "Use Copilot in selected apps with work files in a secure way",
-        "Higher usage to create and edit AI images",
-        "Video editor with 4K export, brand kits, filters and effects",
-        "Data and device security",
-        "All-day video calling and Copilot in Teams",
-      ]
-    },
-    {
-      name: "Microsoft 365 Family",
-      price: "₹8,199 / Year",
-      highlight: true,
-      includesTitle: "Everything in Microsoft 365 Personal, plus:",
-      features: [
-        "Up to 6 users",
-        "1 TB storage per user",
-        "Use on multiple devices",
-        "Premium Office apps",
-        "Family safety features"
-      ]
-    },
-    {
-      name: "Microsoft 365 Premium",
-      price: "₹19,999 / Year",
-      highlight: false,
-      includesTitle: "Everything in Microsoft 365 Family, plus:",
-      features: [
-        "Advanced productivity tools",
-        "Enhanced security",
-        "AI-powered features (Copilot ready)",
-        "Advanced collaboration tools",
-        "Priority support"
-      ]
-    }
-  ]
-  },
+
+    includes: [
+      {
+        title: "Email & Communication",
+        items: [
+          "Business email setup",
+          "Exchange Online configuration",
+          "Outlook setup",
+          "Email migration"
+        ]
+      },
+      {
+        title: "Collaboration Tools",
+        items: [
+          "Microsoft Teams setup",
+          "SharePoint Online",
+          "OneDrive cloud storage",
+          "File sharing"
+        ]
+      },
+      {
+        title: "Security & Access",
+        items: [
+          "MFA setup",
+          "Identity management",
+          "Secure login policies"
+        ]
+      }
+    ], },
 
   "website-app-hosting":
    {
-    title: "Website & App Hosting",
+    title: "Launch and scale your applications on Azure — fast, secure, and hassle-free.",
     intro:
-      "Secure and scalable hosting for websites and business applications.",
+      "We handle deployment, security, scaling, and monitoring — so you can focus on your business.",
     introImage: "/images/hosting.png",
     introImageAlt: "Website and app hosting illustration",
     about: `
-We host your websites and applications on Azure with built-in security,
-monitoring, and backups. Whether it's a business website or a production app,
-your workloads are protected and scalable.
-    `,
-    points: [
-      "Azure App Service / VM hosting",
-      "SSL & basic security hardening",
-      "Monitoring & alerts",
-      "Automated backups",
-    ],
-  },
+We provide fully managed hosting on Microsoft Azure so you can focus on your business while we handle deployment, security, scaling, and monitoring.
+  `,
 
-  "explore-free-azure-services": {
-    title: "Explore free Azure services",
-    intro:
-      "Try the Cloud — Free, Simple, and Risk-Free",
-    about: `
-Not sure how cloud really works for your business? We make it easy to experience Microsoft Azure before making any commitment.
+  points: [
+    "Deploy your website or app in minutes",
+    "Built on Microsoft Azure infrastructure",
+    "Auto scaling based on traffic",
+    "99.9% uptime and reliability",
+    "Built-in monitoring and alerts",
+    "Optimized for performance and cost"
+  ],
 
-We offer a free cloud trial service where you can move a small or non-critical application to Azure and see the results for yourself. This allows you to understand performance, reliability, security, and cost—without risk or disruption.
-    `,
-    points: [
-      "See how your application performs on the cloud",
-      "Understand real-world speed, availability, and reliability",
-      "Learn how cloud security and backups work",
-      "Get clarity on costs and scalability",
-      "Gain confidence before migrating critical systems",
-    ],
-    whyMatters: "Cloud adoption doesn't have to be complex or risky. By testing with a less critical application, you get hands-on experience and clear insights—making future cloud decisions simple and informed.",
-    whoIsThisFor: [
-      "Businesses new to cloud",
-      "Teams exploring Azure for the first time",
-      "Organizations planning a future cloud migration",
-    ],
-    cta: "📩 Start your free cloud test today and experience how Microsoft Azure can support your business—before you move fully to the cloud.",
-  },
+  includes: [
+    {
+      title: "🚀 Easy Deployment",
+      items: [
+        "Deploy from GitHub or code upload",
+        "Support for Node.js, .NET, PHP, Python",
+        "CI/CD pipeline setup",
+        "Quick environment configuration"
+      ]
+    },
+    {
+      title: "⚡ Scalable Infrastructure",
+      items: [
+        "Auto scaling",
+        "Load balancing",
+        "High availability setup",
+        "Global Azure regions"
+      ]
+    },
+    {
+      title: "🔐 Security",
+      items: [
+        "SSL certificates",
+        "Firewall protection",
+        "Secure access control",
+        "DDoS protection"
+      ]
+    },
+    {
+      title: "📊 Monitoring",
+      items: [
+        "Application insights",
+        "Performance monitoring",
+        "Logs & alerts",
+        "Optimization support"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Connect Code",
+      desc: "Link GitHub or upload your application"
+    },
+    {
+      title: "Deploy",
+      desc: "We deploy and configure your app on Azure"
+    },
+    {
+      title: "Scale",
+      desc: "Your app scales automatically"
+    },
+    {
+      title: "Monitor",
+      desc: "We monitor and optimize performance"
+    }
+  ],
+
+  plans: [
+    {
+      name: "Starter",
+      price: "₹2,999/month",
+      features: [
+        "Single app hosting",
+        "SSL included",
+        "Basic monitoring",
+        "Email support"
+      ]
+    },
+    {
+      name: "Growth",
+      price: "₹6,999/month",
+      highlight: true,
+      features: [
+        "Multiple apps",
+        "Auto scaling",
+        "Daily backup",
+        "Priority support"
+      ]
+    },
+    {
+      name: "Enterprise",
+      price: "Custom",
+      features: [
+        "High availability",
+        "Load balancing",
+        "Advanced security",
+        "24/7 support"
+      ]
+    }
+  ]
+},
 
   /* ===== SECURE & RUN YOUR BUSINESS ===== */
-  "backup-recovery": {
-    title: "Data Backup & Recovery",
-    intro:
-      "Protect your business data with automated backups and fast recovery.",
-    about: `
-Data loss can stop a business instantly. We implement Azure-native backup and
-recovery solutions to protect your workloads and ensure quick restoration
-when incidents occur.
-    `,
-    points: [
-      "Azure Backup configuration",
-      "Disaster recovery planning",
-      "Fast restore & testing",
-      "Compliance-ready backup strategy",
-    ],
+ "backup-recovery": {
+  title: "Backup & Disaster Recovery",
+  intro:
+    "Protect your business from data loss and downtime with secure Azure Backup & Disaster Recovery solutions.",
+  
+  introImage: "/images/backup-dr.png",
+  introImageAlt: "Azure backup and disaster recovery illustration",
+
+  about: `
+Data loss, ransomware, or system failures can disrupt your business anytime. 
+Our Azure Backup & Disaster Recovery solution ensures your critical data and applications are always protected and recoverable.
+
+We design and implement secure backup strategies with fast recovery options, helping your business stay operational with minimal downtime.
+  `,
+
+  points: [
+    "Protect critical business data from loss or corruption",
+    "Fast recovery to minimize downtime",
+    "Secure backups stored in Azure",
+    "Protection against ransomware",
+    "Automated backup scheduling",
+    "Scalable solution for growing workloads",
+    "Compliance-ready backup policies",
+    "Business continuity with disaster recovery"
+  ],
+
+  includes: [
+    {
+      title: "🔧 Backup Setup",
+      items: [
+        "Azure Backup configuration",
+        "VM, database, and file backup",
+        "Automated backup policies",
+        "Retention management"
+      ]
+    },
+    {
+      title: "🌍 Disaster Recovery",
+      items: [
+        "Azure Site Recovery setup",
+        "Failover and failback",
+        "Cross-region replication",
+        "DR testing"
+      ]
+    },
+    {
+      title: "🔐 Security",
+      items: [
+        "Encrypted backups",
+        "Ransomware protection",
+        "Secure access control",
+        "Backup alerts"
+      ]
+    },
+    {
+      title: "📊 Monitoring",
+      items: [
+        "Backup status monitoring",
+        "Failure alerts",
+        "Recovery testing",
+        "Performance optimization"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Assess",
+      desc: "Analyze workloads and define backup strategy"
+    },
+    {
+      title: "Configure",
+      desc: "Set up Azure Backup and DR policies"
+    },
+    {
+      title: "Protect",
+      desc: "Automated backups run securely"
+    },
+    {
+      title: "Recover",
+      desc: "Quick restore or failover during incidents"
+    }
+  ],
+
+  plans: [
+    {
+      name: "Basic Backup",
+      price: "₹3,999/month",
+      features: [
+        "VM backup",
+        "Daily backup",
+        "Basic monitoring",
+        "Email support"
+      ]
+    },
+    {
+      name: "Business DR",
+      price: "₹8,999/month",
+      highlight: true,
+      features: [
+        "Backup + DR",
+        "Azure Site Recovery",
+        "Priority support",
+        "Advanced monitoring"
+      ]
+    },
+    {
+      name: "Enterprise",
+      price: "Custom",
+      features: [
+        "Multi-region DR",
+        "High availability",
+        "Compliance setup",
+        "24/7 support"
+      ]
+    }
+  ],
+
+  cta: "Don’t risk your business data. Secure your workloads with Azure Backup & Disaster Recovery today."
   },
 
-  "secure-remote-work": {
-    title: "Secure Remote Work",
-    intro:
-      "Enable safe work-from-home and remote access for your team.",
-    about: `
-We design secure remote access solutions so your team can work safely from
-anywhere without exposing your systems to cyber risks.
-    `,
+  "azure-virtual-desktop": {
+  title: "Secure Cloud Desktop",
+  intro:
+    "Access your office from anywhere with Azure Virtual Desktop — secure, scalable, and easy to manage.",
+
+  introImage: "/images/avd.png",
+
+  about: `
+Azure Virtual Desktop (AVD) allows your team to securely access desktops and applications from anywhere.
+
+We set up and manage your cloud desktop environment so your team can work safely without dependency on office systems.
+  `,
+
+  points: [
+    "Work from anywhere",
+    "Secure login with MFA",
+    "Access apps on any device",
+    "No dependency on office PCs",
+    "Centralized control",
+    "Cost-efficient solution"
+  ],
+
+  fslogix: {
+    title: "User Profile Experience (FSLogix)",
+    desc: "FSLogix ensures your desktop, files, and settings follow you wherever you log in — giving you a consistent experience every time.",
+  
     points: [
-      "Secure VPN / Azure Bastion access",
-      "Identity & MFA enforcement",
-      "Device & access policies",
-      "Zero Trust principles",
-    ],
+      "Your personal desktop loads instantly",
+      "Files and settings are always available",
+      "No data loss even if system changes",
+      "Works seamlessly across multiple sessions",
+      "Improves login speed and performance"
+    ]
   },
 
-  "cloud-support-maintenance": {
-    title: "Cloud Support & Maintenance",
-    intro:
-      "Ongoing monitoring, maintenance, and support for Azure environments.",
-    about: `
-Your cloud environment needs continuous care. We provide proactive monitoring,
-issue resolution, patching, and regular health checks to keep everything running
-smoothly.
-    `,
-    points: [
-      "24/7 monitoring & alerts",
-      "Incident troubleshooting",
-      "Patch & update management",
-      "Monthly health reports",
-    ],
-  },
+  includes: [
+    {
+      title: "Desktop Setup",
+      items: [
+        "Azure Virtual Desktop deployment",
+        "Windows multi-session setup",
+        "Host pool configuration"
+      ]
+    },
+    {
+      title: "Security",
+      items: [
+        "Azure AD integration",
+        "MFA setup",
+        "Conditional access"
+      ]
+    },
+    {
+      title: "Applications",
+      items: [
+        "Microsoft 365 apps",
+        "Business apps",
+        "User-based access"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Setup",
+      desc: "We deploy your cloud desktop"
+    },
+    {
+      title: "Access",
+      desc: "Users log in from anywhere"
+    },
+    {
+      title: "Work",
+      desc: "Use apps like office system"
+    },
+    {
+      title: "Manage",
+      desc: "We monitor and optimize"
+    }
+  ],
+
+  cta: "Enable secure remote work with Azure Virtual Desktop today."
+},
+"cloud-support-maintenance": {
+  title: "24x7 Tier Infrastructure Support Services",
+
+  intro:
+    "Ensure your infrastructure is always available, secure, and optimized with our 24x7 managed support services.",
+
+  about: `
+We provide continuous monitoring, rapid incident resolution, and proactive infrastructure management across Azure, AWS, and on-prem environments.
+
+Our team ensures your business-critical workloads run smoothly with minimal downtime and maximum performance.
+  `,
+
+  points: [
+    "24x7 monitoring and alerting",
+    "Incident and problem management",
+    "Patch and change management",
+    "Backup and disaster recovery",
+    "Cloud infrastructure management (Azure/AWS)",
+    "Security monitoring and compliance"
+  ],
+
+  includes: [
+    {
+      title: "🖥 Monitoring & Operations",
+      items: [
+        "24x7 infrastructure monitoring",
+        "Alert management",
+        "Performance tracking",
+        "Health checks"
+      ]
+    },
+    {
+      title: "🚨 Incident Management",
+      items: [
+        "P1–P4 incident handling",
+        "Root cause analysis",
+        "Escalation management",
+        "On-call support"
+      ]
+    },
+    {
+      title: "⚙️ Maintenance",
+      items: [
+        "Patch management",
+        "OS updates",
+        "Configuration management",
+        "System optimization"
+      ]
+    },
+    {
+      title: "🔐 Security",
+      items: [
+        "Vulnerability checks",
+        "Access control",
+        "Compliance monitoring",
+        "Threat alerts"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Assess",
+      desc: "Understand your infrastructure and define support scope"
+    },
+    {
+      title: "Onboard",
+      desc: "Set up monitoring tools and access"
+    },
+    {
+      title: "Monitor",
+      desc: "Continuous tracking and alerting"
+    },
+    {
+      title: "Optimize",
+      desc: "Improve performance and reduce cost"
+    }
+  ],
+
+  sla: [
+    { priority: "P1", desc: "Critical (Outage)", response: "15m", resolution: "2h" },
+    { priority: "P2", desc: "High", response: "30m", resolution: "4h" },
+    { priority: "P3", desc: "Medium", response: "2h", resolution: "8h" },
+    { priority: "P4", desc: "Low", response: "4h", resolution: "24h" }
+  ],
+
+  plans: [
+    {
+      name: "Basic",
+      price: "₹25,000/month",
+      features: [
+        "Monitoring only",
+        "Email support",
+        "Basic SLA"
+      ]
+    },
+    {
+      name: "Standard",
+      price: "₹50,000/month",
+      highlight: true,
+      features: [
+        "24x7 monitoring",
+        "Incident management",
+        "Phone + email support",
+        "Advanced SLA"
+      ]
+    },
+    {
+      name: "Premium",
+      price: "₹1,00,000/month",
+      features: [
+        "Dedicated engineer",
+        "Proactive optimization",
+        "Custom SLA",
+        "Priority support"
+      ]
+    }
+  ],
+
+  cta: "Get 24x7 expert support for your infrastructure today."
+},
 
   /* ===== OPTIMIZE & GROW ===== */
-  "cloud-cost-optimization": {
-    title: "Cloud Cost Optimization",
-    intro:
-      "Reduce Azure costs without sacrificing performance or security.",
-    about: `
-Cloud costs can grow silently. We analyze your Azure usage and implement
-rightsizing, budget controls, and governance to reduce waste and optimize spend.
-    `,
-    points: [
-      "Cost analysis & reports",
-      "Rightsizing recommendations",
-      "Budgets & alerts",
-      "Ongoing cost governance",
-    ],
-  },
+  "cloud-cost-optimization-assessment": {
+  title: "Cloud Cost Optimization Assessment Service",
+
+  intro:
+    "Understand exactly where your cloud spending is going and how to reduce it with a detailed, expert-led assessment.",
+    introImage: "/images/cost.jpg",
+    introImageAlt: "Cloud Cost Assessment Dashboard",
+  about: `
+Cloud costs often increase due to unused resources, over-provisioning, and lack of visibility.
+
+We perform a deep analysis of your infrastructure and provide clear, actionable recommendations along with detailed reports — helping you optimize cost, improve efficiency, and make better decisions.
+  `,
+
+  points: [
+    "Identify unused and idle resources",
+    "Detect over-provisioned services",
+    "Highlight cost leaks and inefficiencies",
+    "Improve infrastructure efficiency",
+    "Gain full visibility into cloud spending",
+    "Receive clear and actionable recommendations"
+  ],
+
+  includes: [
+    {
+      title: "💰 Cost Analysis",
+      items: [
+        "Detailed cost breakdown",
+        "Service-wise spending analysis",
+        "High-cost resource identification",
+        "Usage vs cost correlation"
+      ]
+    },
+    {
+      title: "🖥 Infrastructure Assessment",
+      items: [
+        "Compute, storage, and network review",
+        "Resource utilization analysis",
+        "Performance vs cost evaluation",
+        "Architecture-level insights"
+      ]
+    },
+    {
+      title: "⚙️ Optimization Recommendations",
+      items: [
+        "Right-sizing recommendations",
+        "Unused resource cleanup",
+        "Storage optimization",
+        "Reserved instance suggestions"
+      ]
+    },
+    {
+      title: "🔄 Automation Opportunities",
+      items: [
+        "VM start/stop scheduling",
+        "Backup automation suggestions",
+        "Patch automation opportunities",
+        "Auto-scaling recommendations"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Discovery",
+      desc: "Collect infrastructure and billing data"
+    },
+    {
+      title: "Analysis",
+      desc: "Analyze usage patterns, performance, and cost"
+    },
+    {
+      title: "Recommendations",
+      desc: "Provide detailed optimization plan with savings"
+    },
+    {
+      title: "Consultation",
+      desc: "Walkthrough report and answer questions"
+    }
+  ],
+
+  deliverables: [
+    "Cost Optimization Report",
+    "Savings Opportunity Report",
+    "Detailed Recommendations Document",
+    "Automation Suggestions",
+    "Consultation Session"
+  ],
+
+  highlight: `
+We don’t just give generic advice — we provide exact resource-level recommendations with estimated savings, so you know exactly what to change and how much you can save.
+  `,
+
+  plans: [
+    {
+      name: "One-Time Assessment",
+      price: "₹15,000 - ₹50,000",
+      highlight: true,
+      features: [
+        "Full infrastructure analysis",
+        "Detailed cost report",
+        "Savings recommendations",
+        "Consultation session"
+      ]
+    },
+    {
+      name: "Advanced Assessment",
+      price: "₹75,000+",
+      features: [
+        "Deep-dive analysis",
+        "Architecture-level recommendations",
+        "Automation plan",
+        "Priority consultation"
+      ]
+    }
+  ],
+
+  cta: "Get a detailed cloud cost optimization report and start saving today."
+},
 
   "azure-landing-zone": {
     title: "Azure Architecture & Landing Zone",
@@ -292,41 +723,107 @@ improve scalability, and enable automation.
     ],
   },
 
-  "Cloud-Security-Posture-Improvement": {
-    title: "Cloud Security Posture Improvement",
-    intro:
-      "As organizations move workloads to the cloud, security risks increase due to misconfigurations, excessive permissions, and lack of visibility. Our Cloud Security Posture Improvement service helps you continuously assess, strengthen, and maintain a secure Azure cloud environment.",
-    about: `
-We identify security gaps, reduce attack surfaces, and align your cloud infrastructure with industry best practices and compliance standards—without impacting performance or business continuity.
-    `,
-    points: [
-      "Security Assessment & Baseline - Evaluate your Azure environment against Microsoft security benchmarks and best practices to identify misconfigurations, vulnerabilities, and policy gaps.",
-      "Identity & Access Hardening - Implement least-privilege access, role-based access control (RBAC), multi-factor authentication (MFA), and conditional access policies.",
-      "Network Security Optimization - Secure virtual networks using NSGs, firewalls, private endpoints, and zero-trust network principles.",
-      "Threat Detection & Monitoring - Enable and fine-tune Microsoft Defender for Cloud, security alerts, and centralized logging for real-time threat visibility.",
-      "Compliance & Governance - Enforce security policies using Azure Policy and governance controls to meet compliance requirements such as ISO, SOC, HIPAA, or internal standards.",
-      "Continuous Improvement - Ongoing monitoring and recommendations to keep your cloud security posture strong as your environment evolves.",
-    ],
-    whyMatters: `
+ "cloud-infrastructure-security": {
+  title: "Cloud Security & Protection",
+
+  intro:
+    "Protect your cloud infrastructure from threats, misconfigurations, and unauthorized access with our structured security plans. We secure your Azure environment with best practices, monitoring, and proactive protection — so your business stays safe without complexity.",
+
+  introImage: "/images/security.png",
+  introImageAlt: "Cloud security protection illustration",
+
+  about: `
+Cloud environments can be vulnerable if not properly configured and monitored.
+
+Our Cloud Security & Protection service provides a layered approach covering identity, access, network, and continuous monitoring.
+
+Whether you are just starting or running production workloads, we offer flexible security plans to match your business needs.
+  `,
+
+  points: [
+    "Protect cloud resources from unauthorized access",
+    "Reduce risk of data breaches and misconfigurations",
+    "Secure identities with MFA and access controls",
+    "Monitor threats and suspicious activities",
+    "Improve overall cloud security posture",
+    "Align with industry best practices and compliance"
+  ],
+
+  includes: [
+    {
+      title: "🔐 Basic Security",
+      items: [
+        "Identity & access setup (RBAC)",
+        "Multi-Factor Authentication (MFA)",
+        "Basic network security (NSG rules)",
+        "Security recommendations review",
+        "Monthly security check"
+      ]
+    },
+    {
+      title: "🛡 Standard Security",
+      items: [
+        "Everything in Basic",
+        "Microsoft Defender for Cloud setup",
+        "Threat detection & alerts",
+        "Vulnerability assessment",
+        "Secure access policies",
+        "Monthly security report"
+      ]
+    },
+    {
+      title: "🚀 Premium Security",
+      items: [
+        "Everything in Standard",
+        "24×7 security monitoring",
+        "Incident response support",
+        "Advanced threat protection",
+        "Compliance & policy enforcement",
+        "Continuous security improvement"
+      ]
+    }
+  ],
+
+  steps: [
+    {
+      title: "Assess",
+      desc: "Review your current security posture"
+    },
+    {
+      title: "Secure",
+      desc: "Implement identity, network, and access controls"
+    },
+    {
+      title: "Monitor",
+      desc: "Track threats and security alerts"
+    },
+    {
+      title: "Improve",
+      desc: "Continuously enhance protection"
+    }
+  ],
+
+  whyMatters: `
 Reduced risk of breaches and misconfigurations
 
-Improved visibility across cloud resources
+Better visibility across cloud resources
 
-Strong identity and access controls
+Stronger identity and access controls
 
 Compliance-ready cloud environment
 
-Continuous security posture monitoring
+Continuous protection and monitoring
+  `,
 
-Alignment with Azure security best practices
-    `,
-    whoIsThisFor: [
-      "Businesses migrating from on-prem to Azure",
-      "Organizations with growing Azure environments",
-      "Companies facing compliance or audit requirements",
-      "Teams lacking in-house cloud security expertise",
-    ],
-  },
+  whoIsThisFor: [
+    "Businesses moving to Azure",
+    "Organizations handling sensitive data",
+    "Companies needing compliance readiness",
+    "Teams without dedicated security experts"
+  ],
+
+  cta: "Secure your cloud infrastructure before risks turn into incidents."
+},
 
   "Azure-Health-Performance-Optimization": {
     title: "Azure Health & Performance Optimization",
@@ -366,22 +863,88 @@ Stable and scalable Azure environment
   },
 
   /* ===== CLOUD MODERNIZATION ===== */
-  "azure-devops": {
-    title: "Azure DevOps",
-    intro:
-      "Streamline your development and deployment processes with Azure DevOps.",
-    about: `
-Azure DevOps provides a comprehensive set of tools for planning, building, testing, and deploying applications. We help you set up and optimize your DevOps pipeline for faster, more reliable software delivery.
-    `,
-    points: [
-      "Azure DevOps organization and project setup",
-      "CI/CD pipeline configuration",
-      "Source control and code management",
-      "Automated testing and deployment",
-      "Release management and monitoring",
-    ],
-  },
+"application-data-modernization": {
+  title: "Application & Data Modernization",
 
+  intro:
+    "Move from server-based infrastructure to fully managed cloud services — no servers, no maintenance, just performance and scalability.",
+
+  introImage: "/images/modernization.png",
+  introImageAlt: "Application and data modernization illustration",
+
+  about: `
+Modernize your IT environment by shifting from traditional server-based setups to fully managed Azure cloud services.
+
+We help you eliminate infrastructure management, reduce operational overhead, and improve performance by leveraging platform-based services.
+
+No need to worry about patching, scaling, backups, or server maintenance — everything is handled by the cloud, so you can focus on your business.
+  `,
+
+  points: [
+    "No server management or maintenance",
+    "Built-in scalability and high availability",
+    "Automatic patching and updates",
+    "Improved performance and reliability",
+    "Reduced operational cost and effort",
+    "Secure and compliant cloud environment"
+  ],
+
+  /* 🔥 Child Services Instead of Includes */
+  childServices: [
+    {
+      title: "Azure SQL Database (PaaS)",
+      desc: "Move from traditional SQL servers to a fully managed database with automated backups, scaling, and built-in security.",
+    },
+    {
+      title: "Azure File Share",
+      desc: "Replace on-prem file servers with secure, scalable cloud file storage accessible from anywhere.",
+    },
+    {
+      title: "Azure App Service",
+      desc: "Host your applications on a fully managed platform without worrying about servers, patching, or infrastructure management.",
+    }
+  ],
+
+  steps: [
+    {
+      title: "Assess",
+      desc: "Understand your current infrastructure"
+    },
+    {
+      title: "Plan",
+      desc: "Identify workloads for modernization"
+    },
+    {
+      title: "Migrate",
+      desc: "Move to managed Azure services"
+    },
+    {
+      title: "Optimize",
+      desc: "Improve performance and cost efficiency"
+    }
+  ],
+
+  whyMatters: `
+Reduced infrastructure complexity
+
+Improved scalability and performance
+
+Lower operational overhead
+
+Faster deployment and updates
+
+Better security and reliability
+  `,
+
+  whoIsThisFor: [
+    "Businesses running applications on virtual machines",
+    "Organizations managing on-prem servers",
+    "Companies looking to reduce infrastructure overhead",
+    "Teams wanting to focus on applications instead of servers"
+  ],
+
+  cta: "Modernize your applications and eliminate server management today."
+},
   "infrastructure-as-code": {
     title: "Infrastructure as Code",
     intro:
@@ -460,6 +1023,69 @@ function ServiceDetail({ onQuoteClick }) {
           ))}
         </ul>
 
+        {service.includes && (
+  <>
+    <h4 style={{ marginTop: "30px" }}>What’s Included</h4>
+
+    <div className="includes-grid">
+      {service.includes.map((section, index) => (
+        <div key={index} className="includes-card">
+          <h5>{section.title}</h5>
+          <ul>
+            {section.items.map((item, i) => (
+              <li key={i}>✔ {item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </>
+)}
+
+{service.fslogix && (
+  <div className="fslogix-section">
+    <h3>{service.fslogix.title}</h3>
+    <p>{service.fslogix.desc}</p>
+
+    <ul className="service-list">
+      {service.fslogix.points.map((point, index) => (
+        <li key={index}>✔ {point}</li>
+      ))}
+    </ul>
+  </div>
+)}
+
+{service.steps && (
+  <div className="steps-section">
+    <h3>How It Works</h3>
+
+    <div className="steps-grid">
+      {service.steps.map((step, index) => (
+        <div key={index} className="step-card">
+          <div className="step-number">{index + 1}</div>
+          <h4>{step.title}</h4>
+          <p>{step.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+
+{slug === "Digital-Workplace-Setup" && (
+  <div className="plans-image-section">
+    <h4 style={{ marginTop: "30px" }}>
+      Microsoft 365 Plans Comparison
+    </h4>
+
+    <img
+      src="/images/m365-plans.png"
+      alt="Microsoft 365 Plans Comparison"
+      className="plans-image"
+    />
+  </div>
+)}
+
         {/* ✅ ADD PRICING HERE */}
 {service.plans && (
   <div className="pricing-section">
@@ -496,6 +1122,29 @@ function ServiceDetail({ onQuoteClick }) {
       ))}
     </div>
   </div>
+)}
+
+{service.childServices && (
+  <>
+    <h2 className="section-heading">Modernization Services</h2>
+
+    <div className="modern-grid">
+      {service.childServices.map((item, index) => (
+        <div key={index} className="modern-card">
+          
+          <div className="modern-icon">
+            {item.title.includes("SQL") && "🗄️"}
+            {item.title.includes("File") && "📁"}
+            {item.title.includes("App") && "🌐"}
+          </div>
+
+          <h3>{item.title}</h3>
+          <p>{item.desc}</p>
+
+        </div>
+      ))}
+    </div>
+  </>
 )}
 
         {service.whyMatters && (

@@ -166,7 +166,7 @@ function Solutions() {
 
   
 
-      {/* CUSTOMER STORIES */}
+      {/* CUSTOMER STORIES 
       <div className="solutions-hero">
         <h1>Customer Stories</h1>
       </div>
@@ -245,7 +245,8 @@ function Solutions() {
             </div>
           </div>
         </article>
-      </div>
+      </div>   
+      */}
 
       {/* CTA */}
       <div className="solutions-cta">
