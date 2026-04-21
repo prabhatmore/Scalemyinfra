@@ -108,7 +108,6 @@ function Services() {
   return (
     <section className="services-section">
       <div className="services-container">
-
         {/* HEADER */}
         <div className="services-header">
           <h2>Empower Your Business with Managed Cloud Services</h2>

@@ -18,10 +18,16 @@ function About() {
               About <span className="highlight">Infrabryte</span>
             </h1>
 
-            <p>
+            <p className="about-hero-lead">
               We are a cloud-first consulting and managed services company helping
               businesses move, secure, and scale on Microsoft Azure with confidence.
             </p>
+
+            <div className="about-trust-row">
+              <span>Azure-first delivery</span>
+              <span>Security by design</span>
+              <span>Cost-aware architecture</span>
+            </div>
 
             <p>
               Our work is driven by hands-on cloud engineering experience and real-world
@@ -40,9 +46,56 @@ function About() {
         </div>
       </section>
 
+      {/* QUICK OVERVIEW */}
+      <section className="about-overview-grid">
+        <article className="about-overview-card">
+          <h4>Cloud-First Consulting</h4>
+          <p>Strategy and architecture aligned to your business goals.</p>
+        </article>
+        <article className="about-overview-card">
+          <h4>Migration Execution</h4>
+          <p>Practical migration paths with minimal disruption and risk.</p>
+        </article>
+        <article className="about-overview-card">
+          <h4>Security & Governance</h4>
+          <p>Security-by-design with standards-based cloud governance.</p>
+        </article>
+        <article className="about-overview-card">
+          <h4>Managed Operations</h4>
+          <p>Reliable cloud operations and continuous optimization support.</p>
+        </article>
+      </section>
+
+      {/* CORE VALUES */}
+      <section className="about-values-section">
+        <h2>Our Core Values</h2>
+        <div className="about-values-grid">
+          <article className="about-value-card">
+            <h4>Clarity First</h4>
+            <p>Clear recommendations and simple decisions without technical noise.</p>
+          </article>
+          <article className="about-value-card">
+            <h4>Security by Default</h4>
+            <p>Security and compliance integrated from day one, not added later.</p>
+          </article>
+          <article className="about-value-card">
+            <h4>Customer Centricity</h4>
+            <p>Solutions shaped around your scale, team capability, and budget.</p>
+          </article>
+          <article className="about-value-card">
+            <h4>Execution Ownership</h4>
+            <p>From planning to operations, we stay accountable for outcomes.</p>
+          </article>
+          <article className="about-value-card">
+            <h4>Continuous Improvement</h4>
+            <p>Ongoing optimization for performance, reliability, and cloud cost.</p>
+          </article>
+        </div>
+      </section>
+
       {/* WHAT WE DO BEST */}
       <div className="about-section">
-        <h2>What We Do Best</h2>
+        <h2><span className="about-section-icon">□</span>What We Do Best</h2>
         <p>
           We design practical, cost-effective, and secure cloud solutions tailored
           to real business needs:
@@ -61,7 +114,7 @@ function About() {
 
       {/* FOUNDER */}
       <div className="about-section about-founder">
-        <h2>Who’s Behind Infrabryte</h2>
+        <h2><span className="about-section-icon">◇</span>Who’s Behind Infrabryte</h2>
         <p>
           Infrabryte is led by a cloud engineer with hands-on experience in
           Microsoft Azure, Kubernetes (AKS), Terraform, DevOps automation,
@@ -75,7 +128,7 @@ function About() {
 
       {/* SPECIALIZATION */}
       <div className="about-section">
-        <h2>What We Specialize In</h2>
+        <h2><span className="about-section-icon">◎</span>What We Specialize In</h2>
         <ul className="about-list">
           <li>Azure architecture & landing zones</li>
           <li>Cloud Migration & Modernization</li>
@@ -87,7 +140,7 @@ function About() {
 
       {/* HOW WE WORK */}
       <div className="about-section">
-        <h2>How We Work</h2>
+        <h2><span className="about-section-icon">◍</span>How We Work</h2>
         <ul className="about-list">
           <li>Architecture-first, not tool-first</li>
           <li>No sales pressure or forced upsells</li>
@@ -99,7 +152,7 @@ function About() {
 
       {/* APPROACH */}
       <div className="about-section">
-        <h2>Our Approach</h2>
+        <h2><span className="about-section-icon">◈</span>Our Approach</h2>
         <p>We believe cloud should be simple, transparent, and measurable.</p>
 
         <div className="principles-grid">
@@ -124,6 +177,33 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* JOURNEY */}
+      <section className="about-journey-section">
+        <h2>Journey with Infrabryte</h2>
+        <div className="about-journey-timeline">
+          <article className="about-journey-step">
+            <span>01</span>
+            <h4>Assess</h4>
+            <p>Understand current environment, risks, and business priorities.</p>
+          </article>
+          <article className="about-journey-step">
+            <span>02</span>
+            <h4>Architect</h4>
+            <p>Design secure, scalable, and cost-conscious target architecture.</p>
+          </article>
+          <article className="about-journey-step">
+            <span>03</span>
+            <h4>Implement</h4>
+            <p>Execute migration and modernization with controlled rollout.</p>
+          </article>
+          <article className="about-journey-step">
+            <span>04</span>
+            <h4>Operate & Optimize</h4>
+            <p>Monitor, secure, and continuously improve cloud operations.</p>
+          </article>
+        </div>
+      </section>
 
       {/* CTA */}
       <div className="about-cta">
