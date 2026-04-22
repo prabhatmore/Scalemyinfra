@@ -6,6 +6,7 @@ import {
   FaServer,
   FaHeadset,
 } from "react-icons/fa";
+import heroIllustration from "../images/background.png";
 
 function Hero({ openQuoteModal }) {
   return (
@@ -14,9 +15,7 @@ function Hero({ openQuoteModal }) {
         <div className="hero-reference-main">
           <div className="hero-reference-left">
             <span className="hero-reference-badge">AZURE CLOUD SOLUTIONS</span>
-            <h1>
-              Build. Migrate. Secure. Scale.
-            </h1>
+            <h1>Build. Migrate. Secure. Scale.</h1>
 
             <p className="hero-reference-subtitle">
               We help businesses design, migrate, and manage secure Azure cloud
@@ -49,7 +48,7 @@ function Hero({ openQuoteModal }) {
 
             <div className="hero-reference-actions">
               <a href="/services" className="hero-reference-btn hero-reference-btn-primary">
-                Explore Services
+                Explore Services &rarr;
               </a>
               <a href="/contact" className="hero-reference-btn hero-reference-btn-secondary">
                 Contact Us
@@ -57,6 +56,13 @@ function Hero({ openQuoteModal }) {
             </div>
           </div>
 
+          <div className="hero-reference-right">
+            <img
+              className="hero-reference-art"
+              src={heroIllustration}
+              alt="Azure cloud infrastructure illustration"
+            />
+          </div>
         </div>
 
         <div className="hero-reference-strip">
