@@ -863,8 +863,8 @@ Stable and scalable Azure environment
   },
 
   /* ===== CLOUD MODERNIZATION ===== */
-"application-data-modernization": {
-  title: "Application & Data Modernization",
+"data-modernization": {
+  title: "Data Modernization",
 
   intro:
     "Move from server-based infrastructure to fully managed cloud services — no servers, no maintenance, just performance and scalability.",
@@ -945,20 +945,94 @@ Better security and reliability
 
   cta: "Modernize your applications and eliminate server management today."
 },
-  "infrastructure-as-code": {
-    title: "Infrastructure as Code",
+  "application-modernization": {
+    customLayout: "application-modernization",
+    title: "Application Modernization",
     intro:
-      "Manage your Azure infrastructure through code for consistency, repeatability, and version control.",
-    about: `
-We help you implement Infrastructure as Code (IaC) practices using tools like ARM templates, Terraform, or Bicep to automate and manage your Azure resources efficiently.
-    `,
-    points: [
-      "IaC tool selection and setup",
-      "Infrastructure templates and modules",
-      "Version control and collaboration",
-      "Automated provisioning and updates",
-      "Infrastructure testing and validation",
+      "Build once. Run anywhere. Scale effortlessly with a container-first cloud architecture.",
+    introImage: "/images/modernization.png",
+    introImageAlt: "Application modernization and container deployment illustration",
+    simpleWords: [
+      "Containerization packs your app so it runs the same way everywhere.",
+      "Move faster with automated deployments and repeatable infrastructure.",
+      "Scale confidently on cloud-native platforms without server overhead.",
     ],
+    quickFlow: [
+      "Your Application",
+      "Pack in Container",
+      "Run Anywhere",
+    ],
+    points: [
+      "Faster deployment with automation",
+      "Reliable and consistent releases",
+      "Elastic scalability for growth",
+      "Security built into each layer",
+      "Cost-efficient cloud operations",
+    ],
+    steps: [
+      { title: "Understand", desc: "Review app architecture, workloads, and deployment goals." },
+      { title: "Containerize", desc: "Package workloads with Docker and optimized images." },
+      { title: "Provision", desc: "Set up cloud infrastructure with Terraform and DevOps pipelines." },
+      { title: "Automate", desc: "Enable CI/CD for build, test, and release automation." },
+      { title: "Deploy", desc: "Run and scale on Kubernetes with high availability." },
+      { title: "Monitor", desc: "Track health, logs, and performance continuously." },
+    ],
+    plans: [
+      {
+        name: "Starter",
+        includesTitle: "For small apps and POCs",
+        price: "₹15,000 - ₹30,000",
+        features: [
+          "Basic containerization (Docker)",
+          "Single app deployment",
+          "Basic CI/CD pipeline",
+          "Manual Kubernetes setup",
+          "1 environment (Dev/Test)",
+        ],
+      },
+      {
+        name: "Standard",
+        includesTitle: "For growing businesses",
+        price: "₹40,000 - ₹80,000",
+        highlight: true,
+        features: [
+          "Full app containerization",
+          "Terraform-based infrastructure",
+          "CI/CD pipeline (build + deploy)",
+          "Kubernetes deployment",
+          "Monitoring setup",
+        ],
+      },
+      {
+        name: "Enterprise",
+        includesTitle: "For large organizations",
+        price: "₹1L+",
+        features: [
+          "Multi-environment setup",
+          "Advanced Terraform + networking",
+          "Secure CI/CD pipelines",
+          "Auto-scaling and high availability",
+          "24x7 monitoring and alerts",
+        ],
+      },
+    ],
+    whyChoose: [
+      "7+ years of cloud delivery experience",
+      "Azure, Kubernetes, and DevOps experts",
+      "End-to-end ownership from design to support",
+      "Reliable support for ongoing operations",
+    ],
+    technologies: [
+      "Docker",
+      "Kubernetes (AKS)",
+      "Terraform",
+      "Azure DevOps",
+      "GitHub Actions",
+      "Microsoft Azure",
+      "Prometheus",
+      "Grafana",
+    ],
+    cta: "Ready to deploy smarter, faster, and safer?",
   },
 
   "aks": {
@@ -991,6 +1065,57 @@ function ServiceDetail({ onQuoteClick }) {
         <Breadcrumbs />
         <h1>Service not found</h1>
         <p>Please check the service URL.</p>
+      </section>
+    );
+  }
+
+  if (service.customLayout === "application-modernization") {
+    return (
+      <section className={`service-detail service-${slug} app-modernization-page`}>
+        <Breadcrumbs />
+        <div className="container-service-page">
+          <section className="cs-hero">
+            <div>
+              <span className="cs-hero-badge">OUR SERVICE</span>
+              <h1>Containerized Application Deployment &amp; Automation</h1>
+              <p className="cs-hero-tagline">Build Once. Run Anywhere. Scale Effortlessly.</p>
+              <p className="cs-hero-description">
+                Build once, run anywhere. We help you deploy your applications using
+                containers, automation, and cloud platforms.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/images/container.jpg"
+                alt="Containerized application deployment and automation"
+                className="cs-hero-image"
+              />
+            </div>
+          </section>
+
+          <section className="cs-what">
+            <img
+              src="/images/container-howitwork.png"
+              alt="Containerization and simple explanation diagram"
+              className="cs-how-image"
+            />
+          </section>
+
+          <section className="cs-keybenefits-block" id="cs-how">
+            <img
+              src="/images/keybenefitscontainer.png"
+              alt="How it works and key benefits for containerized deployment"
+              className="cs-keybenefits-image"
+            />
+          </section>
+
+          <section className="cs-cta">
+            <h2>Ready to Deploy Smarter, Faster and Safer?</h2>
+            <button className="cs-cta-btn" onClick={onQuoteClick}>
+              Contact Us
+            </button>
+          </section>
+        </div>
       </section>
     );
   }

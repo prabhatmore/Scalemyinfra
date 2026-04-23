@@ -12,7 +12,10 @@ function Hero({ openQuoteModal }) {
   return (
     <section className="hero hero-reference">
       <div className="hero-reference-shell">
-        <div className="hero-reference-main">
+        <div
+          className="hero-reference-main"
+          style={{ "--hero-ref-bg": `url(${heroIllustration})` }}
+        >
           <div className="hero-reference-left">
             <span className="hero-reference-badge">AZURE CLOUD SOLUTIONS</span>
             <h1>Build. Migrate. Secure. Scale.</h1>
@@ -54,14 +57,6 @@ function Hero({ openQuoteModal }) {
                 Contact Us
               </a>
             </div>
-          </div>
-
-          <div className="hero-reference-right">
-            <img
-              className="hero-reference-art"
-              src={heroIllustration}
-              alt="Azure cloud infrastructure illustration"
-            />
           </div>
         </div>
 

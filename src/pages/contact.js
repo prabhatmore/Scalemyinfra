@@ -3,50 +3,46 @@ import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <section className="about-page contact-page">
+      <section className="contact-layout">
+        <div className="contact-info-panel">
+          <span className="contact-eyebrow">CLOUD CONSULTATION</span>
+          <h1>
+            Let&apos;s Get <span className="highlight">Started</span>
+          </h1>
+          <p className="contact-trust">
+            No sales pressure • Architecture-focused • Actionable guidance
+          </p>
+          <p className="contact-description">
+            Connect with our cloud experts to unlock the full potential of Azure:
+            simplify migration, strengthen security, and drive measurable business
+            value.
+          </p>
 
-      {/* HERO SECTION - reuse About layout */}
-      <section className="about-hero-section">
-        <div className="about-hero-card">
-
-          <div className="about-hero-image">
-            <img
-              src="/images/contact-img.png"
-              alt="Cloud Consultation"
-              className="contact-hero-image"
-            />
+          <div className="contact-points">
+            <div className="contact-point">Migration and modernization roadmap</div>
+            <div className="contact-point">Security-first architecture review</div>
+            <div className="contact-point">Cost and performance optimization advice</div>
           </div>
 
-          <div className="about-hero-content">
-            <h1>
-              Let’s Get <span className="highlight">Started </span>
-            </h1>
+          <p className="contact-description contact-description-cta">
+            Get in touch and take the next step toward a smarter cloud setup.
+          </p>
+        </div>
 
-            <p className="contact-trust">
-              ✔ No sales pressure &nbsp; ✔ Architecture-focused &nbsp; ✔ Actionable guidance
-            </p>
-
-            <p className="contact-description">
-              Connect with our cloud experts to unlock the full potential of Azure—simplifying your migration journey, strengthening security, and driving measurable business value.
-            </p>
-
-            <p className="contact-description">
-              📩 Get in touch today and take the next step toward a smarter, scalable cloud future.
-            </p>
-
-            {/* ✅ Professional form card */}
-            <div className="contact-form-card">
-              <ContactForm />
-
-              {/* ✅ Trust / privacy reassurance */}
-              <p className="form-note">
-                🔒 We respect your privacy. No spam. No sales calls.
-              </p>
-            </div>
+        <div className="contact-form-panel">
+          <img
+            src="/images/contact-img.png"
+            alt="Cloud consultation"
+            className="contact-hero-image"
+          />
+          <div className="contact-form-card">
+            <h3>Book Your Free Consultation</h3>
+            <p>Tell us your requirement and our team will contact you shortly.</p>
+            <ContactForm />
+            <p className="form-note">We respect your privacy. No spam. No sales calls.</p>
           </div>
-
         </div>
       </section>
-
     </section>
   );
 }

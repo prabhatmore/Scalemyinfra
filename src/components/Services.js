@@ -78,15 +78,15 @@ const servicesData = {
   ],
   modernization : [
     {
-      title: "Application & Data Modernization",
+      title: "Data Modernization",
       desc: "Move from server-based infrastructure to fully managed cloud services.",
-      slug: "application-data-modernization",
+      slug: "data-modernization",
       icon: <FaMoneyBillWave />,
     },
     {
-      title: "Infrastructure as a Code",
+      title: "Application Modernization",
       desc: "We make your Azure run faster and more stable without increasing cost.",
-      slug: "infrastructure-as-code",
+      slug: "application-modernization",
       icon: <FaProjectDiagram />,
     },
     {
@@ -110,7 +110,7 @@ function Services() {
       <div className="services-container">
         {/* HEADER */}
         <div className="services-header">
-          <h2>Empower Your Business with Managed Cloud Services</h2>
+          <h2>Empower Your Business with Cloud Services</h2>
           <p>
             Simple, secure, and scalable Microsoft Azure services —
             from first setup to enterprise growth.

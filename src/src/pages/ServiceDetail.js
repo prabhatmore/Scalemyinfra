@@ -258,7 +258,7 @@ Azure DevOps provides a comprehensive set of tools for planning, building, testi
     ],
   },
 
-  "infrastructure-as-code": {
+  "application-modernization": {
     title: "Infrastructure as Code",
     intro:
       "Manage your Azure infrastructure through code for consistency, repeatability, and version control.",
