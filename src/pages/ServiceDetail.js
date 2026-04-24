@@ -16,6 +16,10 @@ const serviceDetails = {
   introImageAlt: "Cloud adoption journey illustration",
   about: `
 Move your Tally accounting software to cloud and use it just like your office system, but without location restrictions.
+
+We host your Tally environment on secure, high-performance cloud infrastructure, so you get the same familiar experience with added flexibility, speed, and reliability.
+
+With Tally on Cloud, multiple users can work simultaneously from different locations, making it ideal for growing businesses, distributed teams, and remote operations.
   `,
   points: [
     "Access Tally from office, home, or on the go — all you need is internet.",
@@ -83,7 +87,7 @@ Move your Tally accounting software to cloud and use it just like your office sy
     title: "Digital Workplace Setup",
     intro:
       "Set up your complete business workspace in the cloud — including email, documents, collaboration tools, and security. Everything your company needs to start and operate efficiently from day one.",
-      introImage: "/images/digitalworkspace.png",
+      introImage: "/images/digital.png",
       introImageAlt: "Digital workplace setup illustration",
       about: `
 We help you build a fully functional digital office using cloud tools, so your team can work from anywhere without dependency on physical systems.
@@ -131,16 +135,14 @@ From professional email setup to document management, team collaboration, and se
       }
     ], },
 
-  "website-app-hosting":
+  "application-hosting":
    {
     title: "Launch and scale your applications on Azure — fast, secure, and hassle-free.",
     intro:
-      "We handle deployment, security, scaling, and monitoring — so you can focus on your business.",
+      "Run Your Applications Without Server Headaches\n\nDeploy your website or business application on secure cloud infrastructure and let us manage everything, from setup to scaling.\n\nNo downtime. No maintenance stress. Just a fast, secure, always-available application.",
     introImage: "/images/hosting.png",
     introImageAlt: "Website and app hosting illustration",
-    about: `
-We provide fully managed hosting on Microsoft Azure so you can focus on your business while we handle deployment, security, scaling, and monitoring.
-  `,
+    about: ``,
 
   points: [
     "Deploy your website or app in minutes",
@@ -366,8 +368,8 @@ We design and implement secure backup strategies with fast recovery options, hel
   cta: "Don’t risk your business data. Secure your workloads with Azure Backup & Disaster Recovery today."
   },
 
-  "azure-virtual-desktop": {
-  title: "Secure Cloud Desktop",
+  "virtual-desktop": {
+  title: "Virtual Cloud Desktop",
   intro:
     "Access your office from anywhere with Azure Virtual Desktop — secure, scalable, and easy to manage.",
 
@@ -1120,6 +1122,240 @@ function ServiceDetail({ onQuoteClick }) {
     );
   }
 
+  if (slug === "Tally-on-Cloud") {
+    const tallyAboutParagraphs = service.about
+      .split(/\n\s*\n/)
+      .map((text) => text.trim())
+      .filter(Boolean);
+
+    return (
+      <section className="service-detail service-tally-page">
+        <Breadcrumbs />
+
+        <div className="tally-hero">
+          <div className="tally-hero-content">
+            <span className="tally-badge">POPULAR CLOUD ACCOUNTING SERVICE</span>
+            <h1>{service.title}</h1>
+            <p className="tally-intro">{service.intro}</p>
+
+            <ul className="tally-quick-points">
+              <li>Work from office, home, or while traveling</li>
+              <li>Secure cloud access with automatic backups</li>
+              <li>Smooth multi-user performance</li>
+            </ul>
+
+            <button className="btn-pill" onClick={onQuoteClick}>
+              Talk to a Cloud Expert
+            </button>
+          </div>
+
+          {service.introImage && (
+            <div className="tally-hero-image-wrap">
+              <img
+                src={service.introImage}
+                alt={service.introImageAlt || service.title}
+                className="tally-hero-image"
+              />
+            </div>
+          )}
+        </div>
+
+        <div className="tally-section-card">
+          <h3>About this service</h3>
+          <div className="service-about">
+            {tallyAboutParagraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+
+        <div className="tally-section-card">
+          <h3>Key Benefits</h3>
+          <div className="tally-benefits-grid">
+            {service.points.map((point, index) => (
+              <div key={index} className="tally-benefit-item">
+                <span className="tally-benefit-check" aria-hidden="true">✓</span>
+                <span>{point}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {service.plans && (
+          <div className="pricing-section">
+            <h2 className="pricing-title">Plans & Pricing</h2>
+
+            <div className="pricing-grid">
+              {service.plans.map((plan, index) => (
+                <div
+                  key={index}
+                  className="pricing-card"
+                >
+                  <h3>{plan.name}</h3>
+                  <h2 className="price">{plan.price}</h2>
+
+                  <ul>
+                    {plan.features.map((item, i) => (
+                      <li key={i}>✔ {item}</li>
+                    ))}
+                  </ul>
+
+                  <button className="btn-primary" onClick={onQuoteClick}>
+                    Buy Now
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+      </section>
+    );
+  }
+
+  if (slug === "Digital-Workplace-Setup") {
+    const digitalAboutParagraphs = service.about
+      .split(/\n\s*\n/)
+      .map((text) => text.trim())
+      .filter(Boolean);
+
+    return (
+      <section className="service-detail service-digital-page">
+        <Breadcrumbs />
+
+        <div className="digital-hero">
+          <div className="digital-hero-content">
+            <span className="digital-badge">MODERN WORKPLACE TRANSFORMATION</span>
+            <h1>{service.title}</h1>
+            <p className="digital-intro">{service.intro}</p>
+            <button className="btn-pill" onClick={onQuoteClick}>
+              Talk to a Cloud Expert
+            </button>
+          </div>
+
+          {service.introImage && (
+            <div className="digital-hero-image-wrap">
+              <img
+                src={service.introImage}
+                alt={service.introImageAlt || service.title}
+                className="digital-hero-image"
+              />
+            </div>
+          )}
+        </div>
+
+        <div className="digital-section-card">
+          <h3>About this service</h3>
+          <div className="service-about">
+            {digitalAboutParagraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+
+        <div className="digital-section-card">
+          <h3>Key Benefits</h3>
+          <div className="digital-benefits-grid">
+            {service.points.map((point, index) => (
+              <div key={index} className="digital-benefit-item">
+                <span className="digital-benefit-check" aria-hidden="true">✓</span>
+                <span>{point.replace(/^[^\w]+/, "").trim()}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {service.includes && (
+          <div className="digital-section-card">
+            <h3>What’s Included</h3>
+            <div className="includes-grid">
+              {service.includes.map((section, index) => (
+                <div key={index} className="includes-card">
+                  <h5>{section.title}</h5>
+                  <ul>
+                    {section.items.map((item, i) => (
+                      <li key={i}>✔ {item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+      </section>
+    );
+  }
+
+  if (slug === "application-hosting") {
+    const appHostingAboutParagraphs = service.about
+      .split(/\n\s*\n/)
+      .map((text) => text.trim())
+      .filter(Boolean);
+    const appHostingIntroParagraphs = service.intro
+      .split(/\n\s*\n/)
+      .map((text) => text.trim())
+      .filter(Boolean);
+
+    return (
+      <section className="service-detail service-app-hosting-page">
+        <Breadcrumbs />
+
+        <div className="app-hosting-hero">
+          <div className="app-hosting-hero-content">
+            <span className="app-hosting-badge">MANAGED APPLICATION HOSTING</span>
+            <h1>Application Hosting on Cloud</h1>
+            <div className="app-hosting-intro">
+              {appHostingIntroParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+
+            <ul className="app-hosting-quick-points">
+              <li>Fast deployment with enterprise-grade reliability</li>
+              <li>Security, backups, and monitoring included</li>
+              <li>Scale your application without infrastructure stress</li>
+            </ul>
+
+            <button className="btn-pill" onClick={onQuoteClick}>
+              Start Hosting Consultation
+            </button>
+          </div>
+
+          {service.introImage && (
+            <div className="app-hosting-hero-image-wrap">
+              <img
+                src={service.introImage}
+                alt={service.introImageAlt || "Application hosting on cloud"}
+                className="app-hosting-hero-image"
+              />
+            </div>
+          )}
+        </div>
+
+        {appHostingAboutParagraphs.length > 0 && (
+          <div className="app-hosting-section-card">
+            <h3>About this service</h3>
+            <div className="service-about">
+              {appHostingAboutParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="app-hosting-keybenefits-section">
+          <img
+            src="/images/applicationkeybenefits.png"
+            alt="Application hosting key benefits"
+            className="app-hosting-keybenefits-image"
+          />
+        </div>
+
+      </section>
+    );
+  }
+
   return (
     <section className={`service-detail service-${slug}`}>
       <Breadcrumbs />
@@ -1128,11 +1364,11 @@ function ServiceDetail({ onQuoteClick }) {
       <p className="service-intro">{service.intro}</p>
 
       {service.introImage && (
-        <div className="service-intro-image">
+        <div className={`service-intro-image ${slug === "Tally-on-Cloud" ? "service-intro-image-tally" : ""}`}>
           <img 
             src={service.introImage} 
             alt={service.introImageAlt || service.title}
-            className="service-image"
+            className={`service-image ${slug === "Tally-on-Cloud" ? "service-image-tally" : ""}`}
           />
         </div>
       )}

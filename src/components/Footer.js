@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaLinkedin, FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FiCloud, FiShield, FiHeadphones, FiDatabase, FiMail, FiGlobe, FiMessageSquare } from "react-icons/fi";
 
 function Footer() {
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -10,31 +11,65 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-container">
-
-          <div>
+          <div className="footer-col footer-about">
             <h4>Infrabryte</h4>
             <p>
               From on-prem to Azure, we build, migrate, and operate secure cloud
               infrastructure that scales reliably without confusion,
               unnecessary complexity, or downtime.
             </p>
-          </div>
-
-          <div>
-            <h4>Services</h4>
-            <ul>
-              <li>Azure Cloud Migration (On-prem to Azure)</li>
-              <li>Secure Azure Infrastructure Build</li>
-              <li>Cloud Operations & 24×7 Support</li>
-              <li>Backup, DR & Business Continuity</li>
+            <ul className="footer-highlights">
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiShield /></span>
+                <span>Secure by Design</span>
+              </li>
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiCloud /></span>
+                <span>Built for Scale</span>
+              </li>
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiHeadphones /></span>
+                <span>Always Here Support</span>
+              </li>
             </ul>
           </div>
 
-          <div className="footer-contact">
+          <div className="footer-col footer-services">
+            <h4>Services</h4>
+            <ul className="footer-services-list">
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiCloud /></span>
+                <span>Azure Cloud Migration (On-prem to Azure)</span>
+              </li>
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiShield /></span>
+                <span>Secure Azure Infrastructure Build</span>
+              </li>
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiHeadphones /></span>
+                <span>Cloud Operations & 24×7 Support</span>
+              </li>
+              <li>
+                <span className="footer-list-icon" aria-hidden="true"><FiDatabase /></span>
+                <span>Backup, DR & Business Continuity</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-col footer-contact">
             <h4>Let's Connect</h4>
-            <p>📩 Let's discuss your Azure journey</p>
-            <p>Email: contact@infrabryte.com</p>
-            <p>Remote Services – Global</p>
+            <p className="footer-contact-item">
+              <span className="footer-list-icon" aria-hidden="true"><FiMessageSquare /></span>
+              <span>Let's discuss your Azure journey</span>
+            </p>
+            <p className="footer-contact-item">
+              <span className="footer-list-icon" aria-hidden="true"><FiMail /></span>
+              <span>Email: contact@infrabryte.com</span>
+            </p>
+            <p className="footer-contact-item">
+              <span className="footer-list-icon" aria-hidden="true"><FiGlobe /></span>
+              <span>Remote Services - Global</span>
+            </p>
 
             <div className="social-icons">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -70,7 +105,7 @@ function Footer() {
               Code of Business Conduct
             </button>
 
-            <span>© 2026 Infrabryte | All rights reserved</span>
+            <span>© 2026 Infrabryte. All rights reserved.</span>
           </div>
         </div>
 

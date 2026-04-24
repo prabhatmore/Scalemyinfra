@@ -7,6 +7,7 @@ import {
   FaShieldAlt,
   FaMoneyBillWave,
   FaGift,
+  FaCloud,
 } from "react-icons/fa";
 
 /* =========================
@@ -19,18 +20,21 @@ const servicesData = {
       desc: "Access your Tally anytime, from anywhere securely on the cloud.",
       slug: "Tally-on-Cloud",
       icon: <FaGift />,
+      featureImage: "/images/tally-on-cloud-box-new.png",
     },
     {
       title: "Digital Workplace Setup ",
       desc: "Professional email, Teams, OneDrive, and secure user setup.",
       slug: "Digital-Workplace-Setup",
       icon: <FaProjectDiagram />,
+      featureImage: "/images/digitalworkspace.png",
     },
     {
-      title: "Website & App Hosting",
-      desc: "Secure Azure hosting with monitoring, backups, and scalability.",
-      slug: "website-app-hosting",
+      title: "Application Hosting on Cloud",
+      desc: "Get your application hosted, secured, and fully managed by cloud experts.",
+      slug: "application-hosting",
       icon: <FaRocket />,
+      featureImage: "/images/website.png",
     },
   ],
 
@@ -40,18 +44,21 @@ const servicesData = {
       desc: "Automated backups and fast recovery for Azure workloads.",
       slug: "backup-recovery",
       icon: <FaDatabase />,
+      featureImage: "/images/drimageforbox.png",
     },
     {
-      title: "Secure Cloud Desktop",
+      title: "Virtual Cloud Desktop",
       desc: "Safe work-from-home access using Azure security best practices.",
-      slug: "azure-virtual-desktop",
+      slug: "virtual-desktop",
       icon: <FaShieldAlt />,
+      featureImage: "/images/avdbox.png",
     },
     {
       title: "Cloud Security & Protection",
       desc: "Track score improvements monthly.",
       slug: "cloud-infrastructure-security",
       icon: <FaRocket />,
+      featureImage: "/images/secbox.png",
     },
   ],
 
@@ -110,7 +117,9 @@ function Services() {
       <div className="services-container">
         {/* HEADER */}
         <div className="services-header">
-          <h2>Empower Your Business with Cloud Services</h2>
+          <h2>
+            Empower Your Business with <span>Cloud Services</span>
+          </h2>
           <p>
             Simple, secure, and scalable Microsoft Azure services —
             from first setup to enterprise growth.
@@ -123,6 +132,7 @@ function Services() {
             className={activeTab === "start" ? "active" : ""}
             onClick={() => setActiveTab("start")}
           >
+            <span className="services-tab-icon" aria-hidden="true"><FaRocket /></span>
             START YOUR CLOUD JOURNEY
           </button>
 
@@ -130,6 +140,7 @@ function Services() {
             className={activeTab === "secure" ? "active" : ""}
             onClick={() => setActiveTab("secure")}
           >
+            <span className="services-tab-icon" aria-hidden="true"><FaShieldAlt /></span>
             SECURE & MANAGE
           </button>
 
@@ -137,12 +148,14 @@ function Services() {
             className={activeTab === "grow" ? "active" : ""}
             onClick={() => setActiveTab("grow")}
           >
+            <span className="services-tab-icon" aria-hidden="true"><FaProjectDiagram /></span>
             OPTIMIZE & GROW
           </button>
            <button
             className={activeTab === "modernization" ? "active" : ""}
             onClick={() => setActiveTab("modernization")}
           >
+            <span className="services-tab-icon" aria-hidden="true"><FaCloud /></span>
             CLOUD MODERNIZATION
           </button>
         </div>
@@ -156,6 +169,12 @@ function Services() {
               onClick={() => navigate(`/services/${item.slug}`)}
             >
               <div className="service-icon">{item.icon}</div>
+              {item.featureImage && (
+                <div className="service-feature-media" aria-hidden="true">
+                  <img src={item.featureImage} alt="" />
+                  {item.featureNote && <span>{item.featureNote}</span>}
+                </div>
+              )}
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
               <span className="service-link">Learn more →</span>
